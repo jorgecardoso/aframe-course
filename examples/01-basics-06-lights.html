@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basics -Lights</title>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    
+    <a-scene>
+      <a-sky color="lightblue"></a-sky>
+      
+      <a-box position="0 2 -2" width="1" height="1" depth="1" rotation="0 0 0" color="red" ></a-box>
+      
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
+      
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
+      
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      
+      <!-- omni present light - in all directions -->
+      <a-light type="ambient" intensity="0" color="#ffffff"></a-light>
+      
+      <!-- point light that emits in all directions. Try changing the position -->
+      <a-light type="point" intensity="0" position="0 0 0"></a-light>
+      
+      <!-- directional light emits towards (0, 0, 0) -->
+      <a-light type="directional" intensity="0" position="0 10 0"></a-light>
+      
+    </a-scene>
+  </body>
+</html>

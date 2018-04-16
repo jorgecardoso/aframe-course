@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Environments - Dressing</title>
+    <meta name="description" content="Environments Example">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-box position="0 0 -2" height="2" rotation="0 45 0" color="red" ></a-box>
+
+      <a-entity environment="preset: goldmine; dressing: mushrooms; dressingAmount: 20; dressingColor: orange; dressingScale: 1"></a-entity> 
+     <!-- dressing: none, cubes, pyramids, cylinders, towers, mushrooms, trees, apparatus, torii 
+-->
+    </a-scene>
+  </body>
+</html>

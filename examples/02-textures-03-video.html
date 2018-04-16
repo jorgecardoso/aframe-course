@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Textures - Video</title>
+    <meta name="description" content="Textures Example">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-assets>
+        <video id="video1" loop="true" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2F(Hdvidz.in)_Samsung-Gear-360-sample-video.mp4?1516806303720"></video>
+        <video id="video2" autoplay loop="true" src="https://ucarecdn.com/fadab25d-0b3a-45f7-8ef5-85318e92a261/"></video>
+      </a-assets>
+      
+      <a-box src="#video2" repeat="1 1" position="0 1 -2" height="1" ></a-box>
+      <a-sphere src="#video1" repeat="1 1" position="2 1 -2" radius="1" ></a-sphere>
+           
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Environments Example</title>
+    <meta name="description" content="Environments Example">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.0.2/dist/aframe-extras.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="0 0 0" height="2" color="red" ></a-box>
+
+      
+    <!-- https://github.com/feiss/aframe-environment-component/ -->
+      <a-entity environment="preset: japan; dressingAmount: 20"></a-entity> 
+     <!-- none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris 
+-->
+      <a-box position="0.5 0.25 5.25" width="10" depth="0.5" height="0.5"></a-box>
+      <a-ocean position="0 0.4 0" width="10" depth="10" opacity="1"></a-ocean>
+      
+    </a-scene>
+  </body>
+</html>
