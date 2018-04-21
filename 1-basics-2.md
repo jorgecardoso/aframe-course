@@ -1,8 +1,8 @@
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/hurricane-tub)
+---
+title: Basics 2
+---
 
-<a href="index.html">Home</a>
-
-<a href="1-basics-1.html">Previous: Basics 1</a> | <a href="2-textures.html">Next: Textures</a> 
+<a href="index.html">Home</a> | <a href="1-basics-1.html">Previous: Basics 1</a> | <a href="2-textures.html">Next: Textures</a> 
 
 --------
 
@@ -10,8 +10,7 @@
 
 ## Lights
 
-**Example: 01-basics-06-lights** (<a href="examples/01-basics-06-lights.html" target="_blank">open in new tab</a>):
-<iframe src="https://hurricane-tub.glitch.me/examples/01-basics-06-lights.html" width="600" height="400"></iframe>
+:::example 01-basics-06-lights
 
 There are various kinds of lights. In the example, you can see three types: ambient, point, and directional lights. 
 
@@ -29,9 +28,7 @@ After you adjusted the light, you can copy the values of the attributes back to 
 1. Use the inspector to change the directional light so that it illuminates objects from the right side
  
 ## Text 
-
-**Example: 01-basics-07-text** (<a href="examples/01-basics-07-text.html" target="_blank">open in new tab</a>):
-<iframe src="https://hurricane-tub.glitch.me/examples/01-basics-07-text.html" width="600" height="400"></iframe>
+:::example 01-basics-07-text
 
 Text can be added with the `<a-text>` primitive:
 
@@ -52,9 +49,7 @@ Color can also be specified just like in any other primitive.
   
 --------
 
-<a href="index.html">Home</a>
-
-<a href="1-basics-1.html">Previous: Basics 1</a> | <a href="2-textures.html">Next: Textures</a> 
+<a href="index.html">Home</a> | <a href="1-basics-1.html">Previous: Basics 1</a> | <a href="2-textures.html">Next: Textures</a> 
 
 -----
 

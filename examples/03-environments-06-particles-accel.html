@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Environments Example</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.0.2/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+       <a-sky color="blue"></a-sky>
+        <a-plane position="0 0 0" width="10" height="10" color="white" rotation="-90 0 0"></a-plane>
+      
+      <!-- https://github.com/IdeaSpaceVR/aframe-particle-system-component -->
+      <a-entity position="0 2.25 -15" particle-system="preset: rain; size: 1.5; color: red; velocityValue: 0 2 0; velocitySpread: 0 1 0; accelerationValue: 0 1 0; accelerationSpread: 0 1 0"></a-entity>
+    </a-scene>
+  </body>
+</html>

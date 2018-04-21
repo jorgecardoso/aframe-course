@@ -1,8 +1,8 @@
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/hurricane-tub)
+---
+title: Basics 1
+---
 
-<a href="index.html">Home</a>
-
-<a href="0-intro-glitch.html">Previous: Intro</a> | <a href="1-basics-2.html">Next: Basics 2</a> 
+<a href="index.html">Home</a> | <a href="0-intro-glitch.html">Previous: Intro</a> | <a href="1-basics-2.html">Next: Basics 2</a> 
 
 --------
 
@@ -14,8 +14,7 @@
 
 ### Position
 
-**Example: 01-basics-01-position** (<a href="examples/01-basics-01-position.html" target="_blank">open in new tab</a>):
-<iframe src="https://hurricane-tub.glitch.me/examples/01-basics-01-position.html" width="600" height="400"></iframe>
+:::example 01-basics-01-position https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2F01-basics-01-position.png?1523993011680
 
 A-Frame provides various "primitives": simple building blocks for 3D content. In the "01-basics.html" example you will see one such primitives -- a "box":
 
@@ -31,8 +30,7 @@ Notice that the position attribute is "0 2 -2". This means that the box center i
 
 ### Size
 
-**Example: 01-basics-02-size** (<a href="examples/01-basics-02-size.html" target="_blank">open in new tab</a>):
-<iframe src="https://hurricane-tub.glitch.me/examples/01-basics-02-size.html" width="600" height="400"></iframe>
+:::example 01-basics-02-size
 
 To define the size of a primitive you can use the `width`, `height`, and `depth` attributes to control the length in the x, y, and z axes.
 
@@ -46,8 +44,7 @@ In example 01-basics-02, notice how our box is now taller:
 
 ### Rotation
 
-**Example: 01-basics-03-rotation** (<a href="examples/01-basics-03-rotation.html" target="_blank">open in new tab</a>):
-<iframe src="https://hurricane-tub.glitch.me/examples/01-basics-03-rotation.html" width="600" height="400"></iframe>
+:::example 01-basics-03-rotation
 
 The `rotation` attribute specifies three values for the rotation around each of the x, y, z axes. In the example, notice how the box is rotated 45º in the x-axis - towards you.
 
@@ -55,8 +52,7 @@ The `rotation` attribute specifies three values for the rotation around each of 
 
 ### Color
 
-**Example: 01-basics-04-color** (<a href="examples/01-basics-04-color.html" target="_blank">open in new tab</a>):
-<iframe src="https://hurricane-tub.glitch.me/examples/01-basics-04-color.html" width="600" height="400"></iframe>
+:::example 01-basics-04-color
 
 The `color` attribute allows you to set the color of the primitive. You can use color names such as "red", or "green" for colors that have a pre-defined name. For general colors, you can use the hex format such as `#ff8533` (you can use any color picker to find out the hex values, e.g., https://www.w3schools.com/colors/colors_picker.asp )
 
@@ -64,8 +60,7 @@ The `color` attribute allows you to set the color of the primitive. You can use 
 
 ## Different Primitives 
 
-**Example: 01-basics-05-primitives** (<a href="examples/01-basics-05-primitives.html" target="_blank">open in new tab</a>):
-<iframe src="https://hurricane-tub.glitch.me/examples/01-basics-05-primitives.html" width="600" height="400"></iframe>
+:::example 01-basics-05-primitives
 
 In this example, you can see different types of primitives for creating different objects.
 

@@ -1,16 +1,14 @@
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/hurricane-tub)
-
-<a href="index.html">Home</a>
-
-<a href="1-basics-2.html">Previous: Basics 2</a> | <a href="3-environments.html">Next: Environments</a> 
+---
+title: Textures
+---
+<a href="index.html">Home</a> | <a href="1-basics-2.html">Previous: Basics 2</a> | <a href="3-environments.html">Next: Environments</a> 
 
 --------
 
 # Textures
 Textures are images we can apply to our objects to "dress" them. 
 
-**Example: 02-textures-01** <a href="examples/02-textures-01.html" target="_blank">Open example in new tab</a>:
-<iframe src="https://hurricane-tub.glitch.me/examples/02-textures-01.html" width="600" height="400"></iframe>
+:::example 02-textures-01
 
 Because images can take a long time to download and because we usually need to apply the same texture to multiple objects, we should use the `<a-assets>` element to identify the texture and then use the id `#name` when applying it to the primitive:
 
@@ -27,8 +25,7 @@ Because images can take a long time to download and because we usually need to a
 ## Uploading textures to Glitch
 
 ## Repeating
-**Example: 02-textures-02-repeat** <a href="examples/02-textures-02-repeat.html" target="_blank">Open example in new tab</a>:
-<iframe src="https://hurricane-tub.glitch.me/examples/02-textures-02-repeat.html" width="600" height="400"></iframe>
+:::example 02-textures-02-repeat
 
 Textures can be repeated as if they were tiles in each face of a primitive.
 
@@ -37,8 +34,7 @@ To do that we just add the `repeat="x y"` attribute where `x` and `y` are the nu
 The number of repetions can be lower than 1, in which case the texture image is not completely used and is stretched to fill the object's face.
 
 ## Video as texture
-**Example: 02-textures-03-video** <a href="examples/02-textures-03-video.html" target="_blank">Open example in new tab</a>:
-<iframe src="https://hurricane-tub.glitch.me/examples/02-textures-03-video.html" width="600" height="400"></iframe>
+:::example 02-textures-03-video
 
 Video can also be used as a texture. We just need to use the `<video>` element instead of `<img>` in the `<a-assets>`. And we need to use the `autoplay` attribute to make the video play automatically (may not work on all devices). We can also use the `loop=true` attribute to make the video loop:
 
@@ -49,9 +45,10 @@ Video can also be used as a texture. We just need to use the `<video>` element i
 ## Exercises
 
 1. Adapt exercise `01-basics-01` so that the **9** boxes are textured with the "x" and "o" images (these images are available in the project's assets folder):
-<iframe width="600" height="400" src="https://rhinestone-attack.glitch.me/exercises/01-textures-01.html"></iframe>
+:::exercise https://rhinestone-attack.glitch.me/exercises/01-textures-01.html
+
 2. Using texture repetition, create a scene with **2** boxes of (3m x 3m x 1m) textured as in the following example:
-<iframe width="600" height="400" src="https://rhinestone-attack.glitch.me/exercises/01-textures-02.html"></iframe>
+:::exercise https://rhinestone-attack.glitch.me/exercises/01-textures-02.html
 
 ## References
 
@@ -60,9 +57,7 @@ Video can also be used as a texture. We just need to use the `<video>` element i
 
 --------
 
-<a href="index.html">Home</a>
-
-<a href="1-basics-2.html">Previous: Basics 2</a> | <a href="3-environments.html">Next: Environments</a> 
+<a href="index.html">Home</a> | <a href="1-basics-2.html">Previous: Basics 2</a> | <a href="3-environments.html">Next: Environments</a> 
 
 -----
 

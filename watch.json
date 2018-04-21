@@ -8,13 +8,14 @@
   "restart": {
     "exclude": [
       "^public/",
-      "^dist/"
+      "^dist/",
+      "\\.md$"
     ],
     "include": [
       "^package\\.json$",
       "^\\.env$",
-      "\\.js$",
-      "\\.md$"
+      "\\.js$"
+      
     ]
   },
   "throttle": 5000

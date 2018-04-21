@@ -1,0 +1,27 @@
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  
+  max-width: 960px;
+}
+
+ol>li {
+  display: inline-flex;
+  min-width: 320px;
+  min-height: 240px;
+  background-color: tomato;
+  
+  align-items: center;
+  justify-content: center;
+}  
+
+ol>li:nth-child(2) {
+  background-image: url('https://fixed-chronometer.glitch.me/thumb/?url=https://aframe-usj.glitch.me/examples/01-basics-01-position.html');
+}
+
+
+img {
+}tent: center;
+}

@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "express": "^4.15.3",
-    "showdown": "^1.7.1",
-    "redcarpet": "^0.0.1"
+    "showdown": "^1.8.6",
+    "showdown-highlight": "^2.0.0"
   },
   "engines": {
     "node": "8.1.x"

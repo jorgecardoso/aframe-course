@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3D Models - glTF animated</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.0.2/dist/aframe-extras.min.js"></script>
+</head>
+
+<body>
+    <a-scene >
+        <a-assets>
+            <a-asset-item id="wolf" src="https://raw.githubusercontent.com/jorgecardoso/aframe-usj-models/master/wolf_with_animations/scene.gltf"> </a-asset-item>
+          
+
+        </a-assets>
+
+        <a-gltf-model position="0 0 -3"  scale="3 3 3" src="#wolf" animation-mixer="clip: 04_Idle"></a-gltf-model>
+      <!-- See the animation clips at https://sketchfab.com/models/f3769a474a714ebbbaca0d97f9b0a5a0#-->
+  <a-light type="ambient" intensity="4"></a-light>
+     
+    </a-scene>
+</body>
+
+</html>

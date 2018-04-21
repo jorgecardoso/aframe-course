@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Environments Example</title>
+    <meta name="description" content="Environments Example">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.1.1/dist/aframe-physics-system.min.js"></script>
+  </head>
+  <body>
+    <a-scene physics="debug: true">
+    
+
+  <!-- Floor -->
+  <a-plane static-body color="tomato"></a-plane>
+
+  <!-- Immovable box -->
+  <a-box static-body position="0 0.5 -5" width="3" height="1" depth="1" color="orange"></a-box>
+<a-sky></a-sky>
+  <!-- Dynamic box -->
+  <a-box dynamic-body position="5 0.5 0" width="1" height="1" depth="1" color="yellow"></a-box>
+    </a-scene>
+  </body>
+</html>
