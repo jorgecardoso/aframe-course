@@ -1,4 +1,4 @@
-ol:first-of-type {
+h2:first-of-type+ol {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -8,7 +8,8 @@ ol:first-of-type {
   padding: 0;
 }
 
-ol:first-of-type>li {
+h2:first-of-type+ol>li {
+  position:relative;
   display: inline-flex;
   width: 320px;
   height: 240px;
@@ -19,36 +20,75 @@ ol:first-of-type>li {
   align-items: center;
   justify-content: center;
   
-  border: 2px solid maroon;
+  border: 1px solid gray;
   
   margin: 10px 10px;
 } 
-
-ol:first-of-type>li>a {
-  width:100%;
+/*
+h1+ol:first-of-type>li>a::after {
+  content:' ';
   background-color: rgba(245, 245, 245, 0.8);
+  position:absolute;
+  top:0;
+  display:block;
+  width:100%;
+  height: 30%;
+}*/
+
+
+h2:first-of-type+ol>li>a {
+  display:block;
+  position:absolute;
+  top: 0;
+  width:100%;
+  height: 100%;
+background: linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8)) no-repeat;
+    background-size: 100% 50px;
   text-align: center;
   text-decoration: none;
   font-size: 200%;
+  color:black;
 }
 
-ol:first-of-type>li:nth-child(2) {
+
+h2:first-of-type+ol>li:nth-child(1) {
+  background-image: url('https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fglitch-thumb.png?1524423532796');
+}
+h2:first-of-type+ol>li:nth-child(2) {
   background-image: url('https://fixed-chronometer.glitch.me/thumb/?url=https://aframe-usj.glitch.me/examples/01-basics-01-position.html');
 }
-
-ol:first-of-type>li:nth-child(3) {
+h2:first-of-type+ol>li:nth-child(3) {
   background-image: url('https://fixed-chronometer.glitch.me/thumb/?url=https://aframe-usj.glitch.me/examples/01-basics-06-lights.html');
 }
 
-ol:first-of-type>li:nth-child(4) {
+h2:first-of-type+ol>li:nth-child(4) {
   background-image: url('https://fixed-chronometer.glitch.me/thumb/?url=https://aframe-usj.glitch.me/examples/02-textures-01.html');
 }
 
-ol:first-of-type>li:nth-child(5) {
+h2:first-of-type+ol>li:nth-child(5) {
   background-image: url('https://fixed-chronometer.glitch.me/thumb/?url=https://aframe-usj.glitch.me/examples/03-environments-01.html');
 }
-
-ol:first-of-type>li:nth-child(6) {
+h2:first-of-type+ol>li:nth-child(6) {
   background-image: url('https://fixed-chronometer.glitch.me/thumb/?url=https://aframe-usj.glitch.me/examples/04-3d-models-01-gltf.html');
 }
 
+h2:first-of-type+ol>li:nth-child(7) {
+  background-image: url('https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fmagica-voxel-thumb.png?1524423379688');
+}
+
+h2:first-of-type+ol>li:nth-child(8) {
+  background-image: url('https://fixed-chronometer.glitch.me/thumb/?url=https://aframe-usj.glitch.me/examples/06-interactions-04-events-targets.html');
+}
+
+h2:first-of-type+ol>li:nth-child(9) {
+  background-image: url('https://fixed-chronometer.glitch.me/thumb/?url=https://aframe-usj.glitch.me/examples/07-animations-02-easings.html');
+}
+
+
+h2:first-of-type+ol>li:nth-child(10) {
+  background-image: url('https://fixed-chronometer.glitch.me/thumb/?url=https://aframe-usj.glitch.me/examples/08-portals-01.html');
+}
+
+h2:first-of-type+ol>li:nth-child(11) {
+  background-image: url('https://fixed-chronometer.glitch.me/thumb/?url=https://aframe-usj.glitch.me/examples/09-sound-01.html');
+}

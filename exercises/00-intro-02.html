@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <!-- Images. -->
+        <img id="city" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fcity.jpg?1518719834290">
+        <img id="sony" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2FSonyCenter_360panorama.jpg?1518719753440">
+      </a-assets>
+      
+      <a-sky color="#ECECEC" radius="10" src="#city"></a-sky>
+       <a-entity position="0 1 -9"  link="href: 00-intro-01.html; title: Sony Plaza; image: #sony"></a-entity>
+      <a-camera>
+    <a-cursor></a-cursor>
+  </a-camera>
+    </a-scene>
+  </body>
+</html>

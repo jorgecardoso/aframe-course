@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactions - Fusing</title>
+   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+    
+ <a-entity environment="preset: goldmine; dressing: mushrooms; dressingAmount: 10; dressingColor: orange; dressingScale: 1"></a-entity> 
+
+      
+       <a-box position="-2 1.6 -2" color="red" 
+              event-set__fusing="color: lighblue"
+              event-set__click="color: blue"
+              event-set__mouseleave="color: red"
+            ></a-box>
+      
+     
+        <a-camera>
+          <a-cursor></a-cursor>
+        </a-camera>
+    </a-scene>
+    
+  </body>
+</html>

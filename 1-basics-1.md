@@ -1,12 +1,12 @@
 ---
 title: Basics 1
+previous: 0-intro-glitch
+previoustitle: Intro
+next: 1-basics-2
+nexttitle: Basics 2 - Lights, Text
 ---
 
-<a href="index.html">Home</a> | <a href="0-intro-glitch.html">Previous: Intro</a> | <a href="1-basics-2.html">Next: Basics 2</a> 
-
---------
-
-# Basics 1
+# Basics 1 - Primitives
 ## Structure
 
 
@@ -80,18 +80,4 @@ Also note that you can add a `shadow` attribute to make an object cast a shadow.
 
 ## Exercises
 
-1. Create a scene with 9 colored boxes (1m x 1m x 1m) as in the following example: 
-<iframe width="600" height="400" src="https://rhinestone-attack.glitch.me/exercises/01-basics-01.html"></iframe>
-1. Create a scene with 4 boxes to represent walls, and a sphere as in the following example: 
-<iframe width="600" height="400" src="https://rhinestone-attack.glitch.me/exercises/01-basics-02.html"></iframe>
-Add a light blue sky.
-
---------
-
-<a href="index.html">Home</a>
-
-<a href="0-intro-glitch.html">Previous: Intro</a> | <a href="1-basics-2.html">Next: Basics 2</a> 
-
------
-
-Copyright &copy; 2018 Jorge C. S. Cardoso jorgecardoso@ieee.org
+Go to: <a href="https://aframe-usj-exercises.glitch.me/basics-1.html" target="_blank">https://aframe-usj-exercises.glitch.me/basics-1.html</a>

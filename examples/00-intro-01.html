@@ -3,35 +3,20 @@
   <head>
     <title>Example</title>
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <!--<script src="https://aframe.io/aframe/dist/aframe-master.min.js"></script>-->
-    
-    <script src="https://unpkg.com/aframe-event-set-component@4.1.1/dist/aframe-event-set-component.min.js"></script>
   </head>
   <body>
     
     <a-scene>
       <a-assets>
-        <!-- Images. -->
-      <!--  <img id="city" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fcity.jpg?1518719834290">
-        <img id="sony" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2FSonyCenter_360panorama.jpg?1518719753440">
--->
-        <img id="jorgecardoso" crossorigin="anonymous" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2F360_0019%5B1%5D_Stitch_YHC.JPG?1524146307189">
-        <img id="jorgecardoso-bw" preload crossorigin="anonymous"  src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2F360_0019%5B1%5D_Stitch_YHC-bw.JPG?1524146306071">
-        <!-- <video id="video" loop="true" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2F(Hdvidz.in)_Samsung-Gear-360-sample-video.mp4?1516806303720#t=10,12"></video>
-         <video id="video1" loop="true" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2F(Hdvidz.in)_Samsung-Gear-360-sample-video.mp4?1516806303720#t=14,29"></video>
--->
+     
+        <img id="picture" crossorigin="anonymous" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2F360_0019%5B1%5D_Stitch_YHC.JPG?1524146307189">
+       
       </a-assets>
       
-      <a-sky id="sky" color="#ECECEC" radius="500" src="#jorgecardoso"></a-sky>
+      <a-sky id="sky" color="lightblue" radius="500"></a-sky>
 
-      <!--<a-entity position="-2 1 -4"  link="href: 00-intro-02.html; title: City; image: #city; visualAspectEnabled: false; border: blue">-->
-        <a-entity position="5.114 1 -0.043"  geometry="primitive: sphere" material="opacity:0"  radius="1"  event-set__enter="_event: mouseenter; _target: #sky1; visible: true;" event-set__leave="_event: mouseleave; _target: #sky1; visible: false;"></a-entity>
-      <!--</a-entity>-->
-
+        <a-box position="0 1.6 -2" src="#picture"></a-box>
       
-      <a-camera wasd-controls-enabled="false">
-        <a-cursor></a-cursor>
-      </a-camera>
     </a-scene>
     
   </body>

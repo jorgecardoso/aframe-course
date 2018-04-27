@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Animations - Easings</title>
+      <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+      <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+      <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+      <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>
+   </head>
+   <body>
+      <a-scene background="color:lightblue">
+        <a-assets>
+ 
+          <audio id="sonar" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2F105338__sandyrb__sonar-ping-pong-a1.mp3?1524837452409"></audio>
+          
+        </a-assets>
+       
+        
+          
+          <a-sound position="0 1.6 -1" on="click" volume="0.5" src="#sonar">
+              <a-box color="#ff0000" >  </a-box>
+          </a-sound>
+       
+        
+        
+        <a-camera>
+          <a-cursor></a-cursor>
+        </a-camera>
+        
+      </a-scene>
+   </body>
+</html>

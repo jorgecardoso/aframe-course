@@ -1,0 +1,8 @@
+.exampleList{
+
+  float:left;
+}
+
+.clearFix{
+  clear: both;
+}

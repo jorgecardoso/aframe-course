@@ -1,12 +1,13 @@
 ---
 title: Basics 2
+previous: 1-basics-1
+previoustitle: Basics 1 - Primitives
+next: 2-textures
+nexttitle: Textures
 ---
 
-<a href="index.html">Home</a> | <a href="1-basics-1.html">Previous: Basics 1</a> | <a href="2-textures.html">Next: Textures</a> 
 
---------
-
-# Basics 2
+# Basics 2 - Lights, Text
 
 ## Lights
 
@@ -43,14 +44,5 @@ Color can also be specified just like in any other primitive.
   
 ## Exercises
 
-2. Based on example 01-basics-07-text
-  1. Try adding and positioning another line of text.
-  2. Can you rotate it to align it to the side of the cube?
-  
---------
 
-<a href="index.html">Home</a> | <a href="1-basics-1.html">Previous: Basics 1</a> | <a href="2-textures.html">Next: Textures</a> 
-
------
-
-Copyright &copy; 2018 Jorge C. S. Cardoso jorgecardoso@ieee.org
+Go to: <a href="https://aframe-usj-exercises.glitch.me/basics-2.html" target="_blank">https://aframe-usj-exercises.glitch.me/basics-2.html</a>

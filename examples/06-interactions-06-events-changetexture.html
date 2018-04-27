@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Interactions - Cursor</title>
+      <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+      <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+      <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+   </head>
+   <body>
+      <a-scene>
+         <a-assets>
+            <img id="x" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fx.png?1523893000643">
+            <img id="o" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fo.png?1523893003465">
+         </a-assets>
+         <a-entity environment="preset: goldmine; dressingAmount: 20"></a-entity>
+         <a-box src="#x" position="-1 1.6 -2"          
+            event-set__mouseenter="src: #o"
+            event-set__mouseleave="src: #x" ></a-box>
+         <a-box src="#o" position="1 1.6 -2"  
+            event-set__mouseenter="src: #x"
+            event-set__mouseleave="src: #o" ></a-box>
+         <a-camera>
+            <a-cursor></a-cursor>
+         </a-camera>
+      </a-scene>
+   </body>
+</html>

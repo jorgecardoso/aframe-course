@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3D Models - OBJ</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.0.2/dist/aframe-extras.min.js"></script>
+  <script src="../ColladaLoader.js"></script>
+</head>
+
+<body>
+    <a-scene stats>
+        <a-assets>
+          
+                <a-asset-item id="monu9" crossorigin="anonymous" src="https://raw.githubusercontent.com/jorgecardoso/aframe-usj-models/master/monu9/exported.dae"></a-asset-item>
+        </a-assets>
+     
+       <a-entity collada-model="#monu9"></a-entity> 
+      
+      <a-plane rotation="-90 0 0" width="10" height="10" color="red"></a-plane>
+        
+    </a-scene>
+</body>
+
+</html>

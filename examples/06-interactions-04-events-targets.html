@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactions - Targets</title>
+   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+    
+      <a-entity environment="preset: goldmine; dressingAmount: 20"></a-entity> 
+  
+      
+       <a-box id="redbox" position="0 1.6 -2" color="red"           
+              event-set__mouseenter="_target:#greenbox; width: 2"
+              event-set__mouseleave="_target:#greenbox; width: 1"
+            ></a-box>
+      <a-box id="greenbox" position="0 2.6 -2" color="green" 
+             event-set__mouseenter="_target:#bluebox; width: 2"
+              event-set__mouseleave="_target:#bluebox; width: 1"
+            ></a-box>
+      <a-box id="bluebox" position="0 3.6 -2" color="blue" 
+             event-set__mouseenter="_target:#redbox; width: 2"
+              event-set__mouseleave="_target:#redbox; width: 1"
+            ></a-box>
+        <a-camera>
+          <a-cursor></a-cursor>
+        </a-camera>
+    </a-scene>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactions - Cursor</title>
+   <script src="https://rawgit.com/aframevr/aframe/68c9eaf/dist/aframe-master.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene >
+      
+      <a-entity environment="preset: goldmine; dressingAmount: 20"></a-entity> 
+      
+      <a-box id="box" position="2 1.6 -2" color="red" 
+              event-set__mouseenter="color: lightblue"
+              event-set__click="color: blue"
+              event-set__mouseleave="color: red" ></a-box>
+      
+       <a-entity laser-controls="hand: right" ></a-entity>
+      
+       <a-camera>
+          <a-cursor></a-cursor>
+       </a-camera>
+    </a-scene>
+    
+  </body>
+</html>

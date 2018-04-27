@@ -1,0 +1,36 @@
+.example{
+  width:600px; 
+  height:400px;
+  position:relative;
+  
+   background-color:tomato; 
+  display:flex; 
+  justify-content: center; 
+  align-items:center;
+}
+
+.example>iframe {
+position:absolute; 
+  
+top: 0; 
+  left: 0;
+}
+.example>div{
+  width:100%;
+  height:100%;
+}
+.example>div>img {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.example span {
+ position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+   text-align:center;
+  background-color:rgba(255, 255, 255, 0.6);
+}

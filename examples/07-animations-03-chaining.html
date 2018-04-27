@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Animations - Chaining</title>
+      <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+      <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+      <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+      <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>
+   </head>
+   <body>
+      <a-scene background="color:lightblue">
+         <a-box position="-1 1.6 -2" scale="0.5 0.5 0.5" color="#ff0000" 
+                animation="property: color; dur: 2000; to: #00ff00" >
+         </a-box>
+       
+        <a-box id="sec" position="0 1.6 -2" scale="0.5 0.5 0.5" color="#00ff00" 
+                animation="property: color; dur: 2000; delay: 2000; to: #0000ff" >
+         </a-box>
+        
+        <a-box id="thi" position="1 1.6 -2" scale="0.5 0.5 0.5" color="#0000ff" 
+                animation="property: color; dur: 2000; delay: 4000; to: #ff0000" >
+         </a-box>
+        
+      </a-scene>
+   </body>
+</html>

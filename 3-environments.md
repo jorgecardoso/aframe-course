@@ -1,10 +1,10 @@
 ---
 title: Environments
+previous: 2-textures
+previoustitle: Textures
+next: 4-3d-models
+nexttitle: 3D Models
 ---
-
-<a href="index.html">Home</a> | <a href="2-textures.html">Previous: Textures</a> | <a href="4-3d-models.html">Next: 3D Models</a> 
-
---------
 
 # Environments and Other Systems
 ## Environments
@@ -14,7 +14,7 @@ title: Environments
 Environments are an external component for A-Frame and must be explicitely loaded by inserting the following `<script>` element inside the `<head>`:
 
 ```html
- <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+<script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
 ```
 
 After the component is loaded, we can use an `<a-entity>` element to automatically create large environments:
@@ -31,7 +31,7 @@ The name of the preset can be one of: 'none', 'default', 'contact', 'egypt', 'ch
 
 This component is documented at https://github.com/feiss/aframe-environment-component/
 
-### Customizing Environments
+### Customizing environments
 
 
 #### Dressing
@@ -51,7 +51,7 @@ The `dressingScale` parameter controls the height of the objects in meters.
 <a-entity environment="preset: goldmine; dressing: mushrooms; dressingAmount: 20; dressingColor: orange; dressingScale: 1"></a-entity> 
 ```
 
-#### Play Area
+#### Play area
 :::example 03-environments-03-playarea
 
 The `playArea` parameter defines a radius where the ground is flat and no objects are automatically placed. This allows us to create an environment and then populate it with our own objects.
@@ -62,7 +62,7 @@ The `playArea` parameter defines a radius where the ground is flat and no object
 
 
 
-## Particle Systems
+## Particle systems
 :::example 03-environments-04-particles
 
 Particle systems are also an external component that requires the following `<script>`:
@@ -128,17 +128,12 @@ We can also control the speed and amplitude of the waves with the `speed` and `a
 
 
 ## Exercises
-1. 
+
+
+Go to: <a href="https://aframe-usj-exercises.glitch.me/environments.html" target="_blank">https://aframe-usj-exercises.glitch.me/environments.html</a>
+
 
 ## References
 
 1. https://github.com/feiss/aframe-environment-component/
 1. https://github.com/IdeaSpaceVR/aframe-particle-system-component
-
---------
-
-<a href="index.html">Home</a> | <a href="2-textures.html">Previous: Textures</a> | <a href="4-3d-models.html">Next: 3D Models</a> 
-
------
-
-Copyright &copy; 2018 Jorge C. S. Cardoso jorgecardoso@ieee.org

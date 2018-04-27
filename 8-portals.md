@@ -1,12 +1,15 @@
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/hurricane-tub)
+---
+title: Portals
+previous: 7-animations
+previoustitle: Animations
+next: 9-sound
+nexttitle: Sound
+---
 
-<a href="index.html">Back</a>
+# Portals
 
-# Interactions
 
-## Activate video texture
+## Exercises
 
-  
------
 
-Copyright &copy; 2018 Jorge C. S. Cardoso jorgecardoso@ieee.org
+Go to: <a href="https://aframe-usj-exercises.glitch.me/portals.html" target="_blank">https://aframe-usj-exercises.glitch.me/portals.html</a>

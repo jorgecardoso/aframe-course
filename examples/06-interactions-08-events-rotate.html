@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactions - Cursor</title>
+   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color:lightblue">
+  <a-assets>
+          <a-asset-item id="house-obj" crossorigin="anonymous"  src="https://raw.githubusercontent.com/jorgecardoso/aframe-usj-models/master/house/house.obj"></a-asset-item>
+          
+          <a-asset-item id="house-mtl" crossorigin="anonymous" src="https://raw.githubusercontent.com/jorgecardoso/aframe-usj-models/master/house/house.mtl"></a-asset-item>
+        </a-assets>
+  
+       <a-obj-model src="#house-obj" mtl="#house-mtl" scale="0.2 0.2 0.2" position="0 0 -8"></a-obj-model>
+      
+      <a-entity id="door" position="-0.783 1.067 -4.029" scale="1.383 1.079 1.019"
+                event-set__click="_target:#door; rotation: 0 80 0"
+              > 
+       <a-box width="1" height="2" depth="0.1" position="0.5 0 0" color="red"           
+              
+            ></a-box>
+      </a-entity>
+        <a-camera>
+          <a-cursor objects="#door"></a-cursor>
+        </a-camera>
+    </a-scene>
+  </body>
+</html>

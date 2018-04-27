@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactions - Tipycal Action</title>
+   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+    
+      <a-entity environment="preset: goldmine; dressingAmount: 20"></a-entity> 
+  
+      
+       <a-box  position="-1 1.6 -2" color="red"           
+              event-set__mouseenter="visible: false"
+              event-set__mouseleave="visible: true"
+            ></a-box>
+      
+      <a-box position="1 1.6 -2" color="red"           
+              event-set__mouseenter="opacity: 0.3"
+              event-set__mouseleave="opacity: 1"
+            ></a-box>
+        <a-camera>
+          <a-cursor></a-cursor>
+        </a-camera>
+    </a-scene>
+  </body>
+</html>

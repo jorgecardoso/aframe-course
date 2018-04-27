@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Textures - Photosphere</title>
+   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-assets>
+        <img id="photo"  crossorigin="anonymous" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2F26251779237_2707dd2084_k.jpg?1523875921384">
+      </a-assets>
+      
+      <a-box position="0 1.6 -2" rotation="0 30 0"></a-box>
+      <a-sky src="#photo"></a-sky>
+      
+      <a-camera wasd-controls-enabled="false"></a-camera>
+    </a-scene>
+  </body>
+</html>
