@@ -84,6 +84,7 @@ Example `06-interactions-03-events-fusing` (try it on a mobile device) shows the
 
 :::example 06-interactions-04-events-targets
 
+
 When interacting with an object we can cause changes to other objects as well. We do that by defining the `_target` property on the `event_set__?` attribute. To target primitive we must first assign it an `id`. In the example, we give the first box an id of "redbox" (`id="redbox"`) and the second box an id of "greenbox". In the mouseenter event for the redbox, notice how we target the greenbox and change its width to 2:
 
 ```html
@@ -112,9 +113,32 @@ When interacting with an object we can cause changes to other objects as well. W
 :::example 06-interactions-10-laser-controller https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2F2018-04-26-PM_05_16_27-R.png?1524759463879
 
 
+For desktop VR, it is common to use controllers (for example the HTC Vive controllers, or the Rift controlers). 
+
+We can take advantage of these controllers in a simple way by using the A-Frame Laser Controller which is a virtual laser that shoots from the users hands and mimics the mouse events when intersecting with objects.
+
+To add this laser controller, we must add an entity to our scene:
+
+```html
+<a-entity laser-controls="hand: right" ></a-entity>
+```
+
+The `hand`  property specifies which physical controller will be used to shoot the laser from.
+
+
+#### Hand model
 
 :::example 06-interactions-11-controller-models
 
+
+By default, the laser controls show a 3D model of the HTC Vive controls, but we can change it to a 3D model of the hand. For that we add the attribute `hand-controls` to the entity. In this example, we start by adding the laser controls to the right hand controller, and then we specify that the 3D model to show for the right hand controller is the 3D model of the right hand (`hand-controls="right"`).
+We also add another entity to represent the left hand controller and specify that it should be shown with the 3D model of the left hand:
+
+```html
+<a-entity laser-controls="hand: right"  hand-controls="right"></a-entity>
+      
+<a-entity hand-controls="left"></a-entity>
+```
 
 ## Exercises
 
@@ -122,4 +146,7 @@ Go to: <a href="https://aframe-usj-exercises.glitch.me/interactions.html" target
 
 
 ## References
-  
+* `<a-camera>`: https://aframe.io/docs/0.8.0/primitives/a-camera.html
+* `<a-cursor>`: https://aframe.io/docs/0.8.0/primitives/a-cursor.html
+* laser-controls: https://aframe.io/docs/0.8.0/components/laser-controls.html
+* hand-controls: https://aframe.io/docs/0.8.0/components/hand-controls.html

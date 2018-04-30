@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Portals</title>
+      <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+   </head>
+   <body>
+      <a-scene background="color:lightblue">
+     <a-assets>
+        <img id="fountain" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fscreenshot-environments%20example-1525030183055.png?1525030229155">
+       <img id="wolf" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fscreenshot-3d%20models%20-%20gltf%20animated-1525096131691.png?1525096147474">
+      </a-assets>
+      
+      <a-entity environment="preset: tron; playArea: 10"></a-entity> 
+        
+        <a-link position="-2 2 -2"  image="#fountain" href="/examples/03-environments-09-environ-ocean-fountain.html" title="Go to fountain example"></a-link>
+        <a-cylinder position="-2 0.5 -2" radius="0.25"></a-cylinder>
+        
+        <a-link position="2 2 -2"  image="#wolf" href="/examples/07-animations-04-events.html" title="Go to wolf example"></a-link>
+        <a-cylinder position="2 0.5 -2" radius="0.25"></a-cylinder>
+        
+        
+        <a-camera>
+          <a-cursor></a-cursor>
+        </a-camera>
+        
+      </a-scene>
+   </body>
+</html>

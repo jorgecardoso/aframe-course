@@ -147,15 +147,19 @@ Go to: <a href="https://aframe-usj-exercises.glitch.me/3d-models.html" target="_
 
 ### Sites
 
-1. glTF Models: https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0
-2. glTF models: https://sketchfab.com/features/gltf
-2. Animated wold model: https://sketchfab.com/models/f3769a474a714ebbbaca0d97f9b0a5a0#download
+
+* 3D Models
+  * https://sketchfab.com/features/gltf
+  * https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0
+  * Animated wolf model
+     * https://sketchfab.com/models/f3769a474a714ebbbaca0d97f9b0a5a0#download
 
 ### A-Frame
 
-1. `<a-asset-item>`: https://aframe.io/docs/0.8.0/core/asset-management-system.html#sidebar
+* 3D Models
+  * `<a-gltf-model>`: https://aframe.io/docs/0.8.0/primitives/a-gltf-model.html#sidebar
+  * `<a-obj-model>`: https://aframe.io/docs/0.8.0/primitives/a-obj-model.html#sidebar
+  
+* `<a-asset-item>`: https://aframe.io/docs/0.8.0/core/asset-management-system.html#lt-a-asset-item-gt
+* `<a-assets>`: https://aframe.io/docs/0.8.0/core/asset-management-system.html
 
-2. `<a-gltf-model>`: https://aframe.io/docs/0.8.0/primitives/a-gltf-model.html#sidebar
-
-3. `<a-obj-model>`: https://aframe.io/docs/0.8.0/primitives/a-obj-model.html#sidebar
- 

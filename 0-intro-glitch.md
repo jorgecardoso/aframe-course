@@ -7,6 +7,7 @@ nexttitle: Basics 1 - Primitives
 
 
 # Intro Tutorial to Glitch
+
 This course is structured using the Glitch platform. Glitch is a web platform that provides you with a free JavaScript based server for your projects.
 
 This course is a Glitch project that you can copy and modify.
@@ -19,12 +20,15 @@ This course is a Glitch project that you can copy and modify.
   <img src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fglitch-signin.png?1524521776083" width="600" height="400">
 
 1. Remix the AFrame USJ project
+
   1. Go back to http://aframe-usj.glitch.me/index.html and click on the "Remix on Glitch" button to create a copy of this project.
   <img src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fglitch-remix.png?1524522201070" width="600" height="400">
+  
   1. This will create a copy and take you to the editor of Glitch
   <img src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fglitch-remixed.png?1524522382100" width="600" height="400">
 
 ## Learn to get back to your project after you sign out
+
 After you have "Remixed" the course project, let's see how you can go back to it after you log out.
 
 1. Log out
@@ -61,8 +65,11 @@ The project you have Remixed contains all the examples and lessons.
 If you scroll the file list to the left you will see:
 
 1. Assets. This is a special folder in Glitch. If you click it, you will see various images inside it. Do not delete these images because they are being used by the Examples and Lessons.
+
 1. Examples. Inside the "folder" `examples/`. These are the most important files for the course and the ones you will edit or copy to create your own.
+
 2. Course lessons. These are files that end in `.md`. You should not edit these, although there is no big problem in doing so because the course lessons can always be read in the original course site at https://aframe-usj.glitch.me/index.html
+
 3. Additional files. Files ending in `.js`, `.json`, or `.css` these are helper files that you should not change or delete. 
   1. **In particular, the file `server.js` is important so do not delete it or change it.**
 

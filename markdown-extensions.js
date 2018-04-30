@@ -16,7 +16,7 @@ module.exports = {
         filter: function(text, converter, options) {
 
             return text.replace(/:::example (.+?)\s(.+)?/g,
-                '*Example: $1* (<a href="examples/$1.html" target="_blank">open in new tab</a> | <a href="/viewsource/examples/$1.html" target="_blank">view source</a> ):' +
+                '*Example: $1* (<a href="examples/$1.html" target="_blank">open in new tab</a> | <a href="/viewsource/examples/$1.html" target="_blank">view source</a>):' +
                 '<div class="example"> ' +
                 '  <iframe data-src="/examples/$1.html" width="100%" height="100%"></iframe>' +
                 '  <div><img src=\'https://fixed-chronometer.glitch.me/shot/?url=https://aframe-usj.glitch.me/examples/$1.html\'>' +

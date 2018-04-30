@@ -22,7 +22,7 @@ Because images can take a long time to download and because we usually need to a
 <a-box src="#boxTexture" position="0 0 -2" height="2" rotation="0 45 0"></a-box>
 ```
 
-**It's important to note that inside the `<a-assets>` the `id` does not have a hash (#) symbol. But when using that `id` in a `src` attribute, we must add the hash (#).**
+*It's important to note that inside the `<a-assets>` the `id` does not have a hash (#) symbol. But when using that `id` in a `src` attribute, we must add the hash (#).*
 
 ## Uploading textures to Glitch
 
@@ -62,7 +62,7 @@ Video can also be used as a texture. We just need to use the `<video>` element i
 
 ```html
 <a-videosphere src="#video"></a-videosphere>
-      <!--<a-sky src="#video"></a-sky>-->
+<!-- <a-sky src="#video"></a-sky> -->
 ```
 
 ## Exercises
@@ -72,5 +72,7 @@ Go to: <a href="https://aframe-usj-exercises.glitch.me/textures.html" target="_b
 
 ## References
 
-1. Images for textures: https://github.com/aframevr/sample-assets/tree/master/assets/images
-2. 360ª panorama images: https://www.flickr.com/groups/360degrees/
+* Images for textures 
+  * https://github.com/aframevr/sample-assets/tree/master/assets/images
+* 360ª panorama images 
+  * https://www.flickr.com/groups/360degrees/

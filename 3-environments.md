@@ -11,6 +11,7 @@ nexttitle: 3D Models
 
 :::example 03-environments-01
 
+
 Environments are an external component for A-Frame and must be explicitely loaded by inserting the following `<script>` element inside the `<head>`:
 
 ```html
@@ -25,7 +26,7 @@ After the component is loaded, we can use an `<a-entity>` element to automatical
 
 The name of the preset can be one of: 'none', 'default', 'contact', 'egypt', 'checkerboard', 'forest', 'goaland', 'yavapai', 'goldmine', 'arches', 'threetowers', 'poison', 'tron', 'japan', 'dream', 'volcano', 'starry', 'osiris'.
 
-**Note that this element is used in a slightly different way from previous ones: we use a generic `<a-entity>` and them inside the `environment` attribute we define the various details of the environment (preset is just one). Also note that the syntax is parameter:value instead of parameter=value**
+*Note that this element is used in a slightly different way from previous ones: we use a generic `<a-entity>` and them inside the `environment` attribute we define the various details of the environment (preset is just one). Also note that the syntax is parameter:value instead of parameter=value*
 
 1. Explore the different presets by running the example and changing the preset name.
 
@@ -36,6 +37,7 @@ This component is documented at https://github.com/feiss/aframe-environment-comp
 
 #### Dressing
 :::example 03-environments-02-dressing
+
 
 Dressings are additional objects scattered throughout the environment. 
 
@@ -54,6 +56,7 @@ The `dressingScale` parameter controls the height of the objects in meters.
 #### Play area
 :::example 03-environments-03-playarea
 
+
 The `playArea` parameter defines a radius where the ground is flat and no objects are automatically placed. This allows us to create an environment and then populate it with our own objects.
 
 ```html
@@ -65,10 +68,11 @@ The `playArea` parameter defines a radius where the ground is flat and no object
 ## Particle systems
 :::example 03-environments-04-particles
 
+
 Particle systems are also an external component that requires the following `<script>`:
 
 ```html
- <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+<script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
 ```
 
 Once we include the script, we can use a generic `<a-entity>` and configure the particles in the `particle-system` attribute, in a similar way as we did with the environment.
@@ -90,6 +94,7 @@ This componente is documented at https://github.com/IdeaSpaceVR/aframe-particle-
 #### Color and Size
 :::example 03-environments-05-particles-color
 
+
 To change the particle's color just add the `color` parameter to its configuration (note that just like the environment, different parameters must be separated by a semi-colon `;`).
 
 To change the size, we use the `size` parameter:
@@ -106,8 +111,10 @@ To change the size, we use the `size` parameter:
 #### Making a fountain
 :::example 03-environments-07-particles-fountain
 
+
 ## Oceans
 :::example 03-environments-08-oceans
+
 
 Oceans are also an external component, so we need to add another `<script>` tag to our code (inside the `<head>` element):
 
@@ -135,5 +142,13 @@ Go to: <a href="https://aframe-usj-exercises.glitch.me/environments.html" target
 
 ## References
 
-1. https://github.com/feiss/aframe-environment-component/
-1. https://github.com/IdeaSpaceVR/aframe-particle-system-component
+1. Environments
+  1. Include: `<script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>`
+  2. Doc: https://github.com/feiss/aframe-environment-component/
+2. Particle Systems
+  1. Include: `<script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>`
+  2. Doc: https://github.com/IdeaSpaceVR/aframe-particle-system-component
+3. Oceans
+  1. Include: `<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.0.2/dist/aframe-extras.min.js"></script>`
+  2. Doc: https://github.com/donmccurdy/aframe-extras/tree/master/src/primitives
+  

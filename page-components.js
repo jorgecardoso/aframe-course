@@ -42,7 +42,7 @@ module.exports = {
 
         return '<script src="https://button.glitch.me/button.js" data-style="glitch"></script><script src="/loadiframe.js"></script>' +
             '<hr>' +
-            'Copyright &copy; 2018 Jorge C. S. Cardoso jorgecardoso@ieee.org' +
+            (process.env.COPYRIGHT || 'Change environment variable in .env file: COPYRIGHT=message') +
             '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118123196-1"></script>' +
             '<script>' +
             'window.dataLayer = window.dataLayer || [];' +
@@ -88,7 +88,8 @@ var makeMenu = function() {
    '<li> <a href="/listfiles.html" >List of all files</a> </li>' +
   '</ol>' +
   '<ol class="menu">' +
-  '<li> <a href="0-intro-glitch.html">0. Intro to Glitch</a></li>'+
+  '<li> <a href="0-intro-glitch.html">0.1 Intro to Glitch</a></li>'+
+  '<li> <a href="0-intro-html.html">0.2 Intro to HTML</a></li>'+
   '<li> <a href="1-basics-1.html">1.1 Primitives</a></li>' +
   '<li> <a href="1-basics-2.html">1.2 Lights, Text</a> </li>' +
   '<li> <a href="2-textures.html">2. Textures</a> </li>' +
