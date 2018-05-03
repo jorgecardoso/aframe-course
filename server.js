@@ -12,7 +12,7 @@ const pageComponents = require('./page-components');
 
 app.use('/examples', express.static('examples'))
 app.use('/exercises', express.static('exercises'))
-  
+
 
 // when index route accessed, send readme converted to html
 app.get("/", function (req, res) {  
@@ -21,7 +21,7 @@ app.get("/", function (req, res) {
 
 app.get("/listfiles.html", function (req, res) {  
   var md = pageComponents.makeExampleList("Examples", fs.readdirSync('examples'));
-  
+
   md += pageComponents.makeExampleList("Exercises", fs.readdirSync('exercises'));
   md += '<div class="clearFix"></div>';
   //console.log(html);
@@ -30,7 +30,7 @@ app.get("/listfiles.html", function (req, res) {
 });
 
 app.get("/:name.:ext", function (req, res) {  
-  
+
   if (fs.existsSync(req.params['name']+'.'+req.params['ext'])) {
     res.sendFile(req.params['name']+'.'+req.params['ext'], {root: '.'});
   } else {
@@ -55,15 +55,13 @@ app.use("/viewsource", function (req, res) {
     return console.log(err);
   }
     res.send(pageComponents.makePage("---\ntitle: Source of "+req.path+"\n---\n\n```html\n" + data + "\n```", false, true));
-    
+
 });
-  
-   
+
+
 })
 
 // listen for requests :)
 var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port)
 })
-
-

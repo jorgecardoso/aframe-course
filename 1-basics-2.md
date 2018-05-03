@@ -27,7 +27,7 @@ Open the example in a new tab and then press `<ctrl> + <alt> + i` (or `<cmd> + <
 
 After you adjusted the light, you can copy the values of the attributes back to your code.
 
-1. Use the inspector to change the directional light so that it illuminates objects from the right side
+1. Use the inspector to change the point light so that it illuminates objects from the right side
 
 
 ## Text 

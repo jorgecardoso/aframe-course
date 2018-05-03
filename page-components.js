@@ -18,7 +18,9 @@ module.exports = {
             '<link rel="stylesheet" href="/titles.css">' +
              '<link rel="stylesheet" href="/listfiles.css">' +
             markdownExtensions.getStylesheetInclude() +
-            '<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"></head><body>';
+            '<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">'+
+            '<meta name="viewport" content="width=device-width, initial-scale=1">' +
+            '</head><body>';
         return h;
     },
    makeHeader: function(mdConverter) {
@@ -52,15 +54,18 @@ module.exports = {
             '</script>' +
             '</body></html>';
     },
-    makeExampleListItem: function(exampleName) {
-        return '<li><a href="examples/' + exampleName + '.html" target="_blank">' + exampleName + '</a></li>';
+    makeExampleListItem: function(exampleName, title) {
+      if (title === "Exercises" ) {
+        return '<li id="'+exampleName+'"><a href="exercises/' + exampleName + '.html" target="_blank">' + exampleName + '</a></li>';
+      }
+        return '<li id="'+exampleName+'"><a href="examples/' + exampleName + '.html" target="_blank">' + exampleName + '</a></li>';
     },
     makeExampleList: function(title, fileList) {
         var md = '<div class="exampleList"><h2>' + title + '</h2><ul>';
         fileList.forEach(file => {
             console.log(file);
             if (file.endsWith('.html')) {
-                md += this.makeExampleListItem(file.slice(0, -5));
+                md += this.makeExampleListItem(file.slice(0, -5), title);
             }
         });
         md += '</ul></div>';
