@@ -38,7 +38,7 @@ And then refer to that image in the `image` attribute of the `<a-link>`:
 
 Notice in the previous example, how the preview images of the portals changed perspective as you moved around the portal. That is because the images are actually photospheres (equirectangular images) taken from the respective scenes.
 
-To take an equirectangular screenshot of a scene, you can just enter that scene and press `<ctrl> + <shift> + <alt> + s` (replace `<ctrl>` by `<cmd>` in a Mac).
+To take an equirectangular screenshot of a scene, you can just enter that scene and press `<ctrl> + <shift> + <alt> + s`.
 
 ## Changing the link appearance
 

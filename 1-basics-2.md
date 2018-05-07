@@ -1,9 +1,5 @@
 ---
 title: Basics 2
-previous: 1-basics-1
-previoustitle: Basics 1 - Primitives
-next: 2-textures
-nexttitle: Textures
 ---
 
 
@@ -20,7 +16,7 @@ Note that the `intensity` attribute on all of them is set to zero (light is turn
 
 Also, it is good at this point to introduce the A-Frame inspector to manipulate the lights interactively.
 
-Open the example in a new tab and then press `<ctrl> + <alt> + i` (or `<cmd> + <alt> + i`).
+Open the example in a new tab and then press `<ctrl> + <alt> + i`.
 
 <a href="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fa-frame-inspector.png?1523376452697" target="_blank">
 <img src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fa-frame-inspector.png?1523376452697" width="600"></a>

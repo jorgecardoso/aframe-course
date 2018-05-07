@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main</title>
+   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-assets>
+        <video id="tv" autoplay muted loop src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2FUSJ%20New%20Campus%20Promo%20Video.mp4?1525485658950"> </video>
+        <img id="main"  crossorigin="anonymous" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2FR0010060.JPG?1525484509844">
+      </a-assets>
+      
+      
+      <a-sky radius="5000" src="#main"></a-sky>
+      <a-sphere src="#tv" radius="495" side="double" phi-length="18.790" phi-start="314.120" theta-length="10.210" theta-start="81.610"></a-sphere>
+      <a-camera wasd-controls-enabled="false"></a-camera>
+    </a-scene>
+  </body>
+</html>

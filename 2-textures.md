@@ -24,7 +24,6 @@ Because images can take a long time to download and because we usually need to a
 
 *It's important to note that inside the `<a-assets>` the `id` does not have a hash (#) symbol. But when using that `id` in a `src` attribute, we must add the hash (#).*
 
-## Uploading textures to Glitch
 
 ## Repeating
 :::example 02-textures-02-repeat
