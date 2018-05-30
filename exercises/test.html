@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Basics - Primitives</title>
+      <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+     <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>
+   </head>
+   <body>
+      <a-scene>
+         <a-sky color="lightblue"></a-sky>
+        <a-box color="red" position="0 0 -2"></a-box>
+        <a-camera>
+          
+          
+          <a-entity position="0 2 0" animation="property:rotation; to: 0 360 0; dur: 2000; loop:true">
+            <a-box color="yellow" width="0.5" position="0 0 -2"></a-box>
+          </a-entity>
+          
+        </a-camera>
+      </a-scene>
+   </body>
+</html>

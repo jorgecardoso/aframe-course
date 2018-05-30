@@ -6,22 +6,20 @@
       <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
       <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
       <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>
+     <script src="https://aframe-usj.glitch.me/proximity-trigger.js"></script>
    </head>
    <body>
-      <a-scene background="color:lightblue">
-        
+      <a-scene>
         <a-assets>
-          <audio id="musicbox" crossorigin="anonymous" src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fbaby-music-box_daniel-simion.mp3?1524832969017" ></audio>
+          
         </a-assets>
-     
-        <a-box position="-1 1.6 -3" color="#ff0000" >
-            <a-sound autoplay="true" loop="true" src="#musicbox"></a-sound>
-         </a-box>
-        
-        <a-box id="one" position="1 1.6 -3" color="#00ff00" >
-         </a-box>        
 
-        <a-camera>
+        <a-sky id="sky" color="lightblue"></a-sky>
+        <a-entity proximity-trigger="distance: 1" position="0 1.6 -3" 
+                  event-set__playerenter="_target:#sky; color: red" >
+        </a-entity>        
+          
+        <a-camera >
           <a-cursor></a-cursor>
         </a-camera>
         

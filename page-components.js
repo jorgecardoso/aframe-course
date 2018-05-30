@@ -105,6 +105,8 @@ var makeMenu = function() {
   '<li> <a href="7-animations.html" >7. Animations</a> </li>' +
   '<li> <a href="8-portals.html" >8. Portals</a> </li>' +
   '<li> <a href="9-sound.html" >9. Sound</a> </li>' +
+  '<li> <a href="10-proximity.html" >10. Proximity Detection</a> </li>' +
+    '<li> <a href="11-superhands.html" >11. Super Hands</a> </li>' +
 
     '</ol>';
 }

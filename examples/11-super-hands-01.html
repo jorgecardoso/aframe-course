@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactions - Cursor</title>
+   <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+     <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>
+     <script src="https://unpkg.com/super-hands@2.1.0/dist/super-hands.min.js"></script> 
+    <!--<script src="https://wmurphyrd.github.io/aframe-super-hands-component/examples/build.js"></script>-->
+  </head>
+  <body>
+    <a-scene background="color:lightblue">
+      
+      <a-assets>
+        <a-mixin id="box" material="color: red" width="0.5" height="0.5" depth="0.5"  color="red" hoverable grabbable stretchable draggable droppable></a-mixin>
+      </a-assets>
+      
+      <a-box mixin="box" position="-1 1.6 0" color="blue"></a-box>
+      <a-box mixin="box" position="0 1.6 0" color="green"></a-box>
+      <a-box mixin="box" position="1 1.6 0" color="red"></a-box>
+      <a-box mixin="box" position="-1 2.6 0" color="green"></a-box>
+      <a-box mixin="box" position="0 2.6 0" color="red"></a-box>
+      <a-box mixin="box" position="1 2.6 0" color="blue"></a-box>
+      
+    <a-entity environment="preset: goldmine; dressing: mushrooms; dressingAmount: 20; dressingColor: orange; dressingScale: 1"></a-entity> 
+     
+
+       <a-entity progressive-controls="objects: a-box; maxLevel: point;">
+          <a-entity id="rhand"  class="right-controller" hand-controls="right"></a-entity>
+          <a-entity id="lhand" class="left-controller" hand-controls="left"></a-entity>
+      </a-entity>
+      
+     
+    </a-scene>
+  </body>
+</html>
