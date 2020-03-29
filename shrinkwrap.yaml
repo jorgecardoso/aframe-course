@@ -246,6 +246,7 @@ packages:
       integrity: sha1-jpQ9E1jcN1VQVOy+LtsFqhdO3hQ=
   /he/1.1.1:
     dev: false
+    hasBin: true
     resolution:
       integrity: sha1-k0EP0hsAlzUVH4howvJx80J+I/0=
   /highlight.js/9.12.0:
@@ -396,6 +397,7 @@ packages:
       integrity: sha512-lc/aahn+t4/SWV/qcmumYjymLsWfN3ELhpmVuUFjgsORruuZPVSwAQryq+HHGvO/SI2KVX26bx+En+zhM8g8hQ==
   /mime/1.4.1:
     dev: false
+    hasBin: true
     resolution:
       integrity: sha512-KI1+qOZu5DcW6wayYHSzR/tXKCDC5Om4s1z2QJjDULzLcmf3DvzS7oluY4HCTrc+9FiKmWUgeNLg7W3uIQvxtQ==
   /mimic-fn/1.2.0:
@@ -619,6 +621,7 @@ packages:
     dependencies:
       yargs: 10.1.2
     dev: false
+    hasBin: true
     resolution:
       integrity: sha1-kepO47elRIqspoIKTifmkMatdxw=
   /signal-exit/3.0.2:
@@ -713,6 +716,7 @@ packages:
     dependencies:
       isexe: 2.0.0
     dev: false
+    hasBin: true
     resolution:
       integrity: sha512-xcJpopdamTuY5duC/KnTTNBraPK54YwpenP4lzxU8H91GudWpFv38u0CKjclE1Wi2EH2EDz5LRcHcKbCIzqGyg==
   /wrap-ansi/2.1.0:
@@ -756,7 +760,7 @@ packages:
     resolution:
       integrity: sha512-ivSoxqBGYOqQVruxD35+EyCFDYNEFL/Uo6FcOnz+9xZdZzK0Zzw4r4KhbrME1Oo2gOggwJod2MnsdamSG7H9ig==
 registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 6
+shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   express: ^4.15.3
