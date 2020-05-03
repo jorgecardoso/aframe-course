@@ -6,22 +6,6 @@ style: index1.css
 
 # Virtual Reality Environments course materials 
 
-### Students' projects 2018
-
-Alvira: https://lovely-narwhal.glitch.me/index.html
-Jason: https://field-grade.glitch.me/index.html
-Julieta: https://201700367.glitch.me/index.html
-Lorina: https://topaz-cream.glitch.me/index.html
-Maggie: https://maggie-u.glitch.me/index.html
-Manyee: https://manyee.glitch.me/scene1.html
-Peggy: https://peggy-cheang.glitch.me/index.html
-Trudie: https://trudie.glitch.me/index.html
-Vera: https://noon-hero.glitch.me/index.html
-Victoria: https://juniper-binder.glitch.me/index.html
-Vincent: https://skillful-relish.glitch.me/index.html
-Winnie: https://winnies-exercise.glitch.me/index.html
-
-
 ## Topics
 
 1. <a href="0-intro-glitch.html">Intro to Glitch</a>
