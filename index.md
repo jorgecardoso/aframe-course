@@ -8,23 +8,39 @@ style: index1.css
 
 ## Topics
 
+### Intro to VR
+
+### Intro to Glitch
+
 1. <a href="0-intro-glitch.html">Intro to Glitch</a>
+
+### A-Frame Basics
+1. Navigating A-Frame Website
 1. <a href="1-basics-1.html">Basics 1 - Primitives</a>
 1. <a href="1-basics-2.html">Basics 2 - Lights, Text</a>
 1. <a href="2-textures.html">Textures</a>
 1. <a href="3-environments.html">Environments</a>
+1. <a href="8-portals.html" >Portals</a>
+1. <a href="8-portals.html" >360º VR</a>
+
+### A-Frame Intermediate
+
 1. <a href="4-3d-models.html">3D Models</a>
 1. <a href="5-magica-voxel.html">Magica Voxel</a>
 1. <a href="6-interactions.html" >Interactions</a>
 1. <a href="7-animations.html" >Animations</a>
-1. <a href="8-portals.html" >Portals</a>
 1. <a href="9-sound.html" >Sound</a>
+
+### A-Frame Advanced
+
+1. Tangibles
 
 ## References
 
 1. <a href="http://aframe.io" target="_blank">A-Frame</a>
 
 
+<!--
 ### A-Frame Primitives Categorized
 
 * 2D and 3D shapes
@@ -71,6 +87,8 @@ style: index1.css
 * `<a-cursor>`: https://aframe.io/docs/0.8.0/primitives/a-cursor.html
 * laser-controls: https://aframe.io/docs/0.8.0/components/laser-controls.html
 * hand-controls: https://aframe.io/docs/0.8.0/components/hand-controls.html
+
+-->
 
 ### External components
 1. Animation
