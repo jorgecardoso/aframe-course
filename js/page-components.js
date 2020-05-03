@@ -1,6 +1,6 @@
 const showdown = require('showdown')
 const showdownHighlight = require("showdown-highlight")
-const markdownExtensions = require('./markdown-extensions');
+const markdownExtensions = require("./markdown-extensions.js");
 const converter = new showdown.Converter({
     extensions: [showdownHighlight, markdownExtensions.example, markdownExtensions.exercise]
 })
@@ -14,9 +14,9 @@ module.exports = {
 
         let h = '<html lang="en"><head><title>A-Frame USJ' + (title ? ": " + title : "") + '</title>' +
             ((style !== undefined) ? '<link rel="stylesheet" href="' + style + '">' : '') +
-            '<link rel="stylesheet" href="/menu.css">' +
-            '<link rel="stylesheet" href="/titles.css">' +
-             '<link rel="stylesheet" href="/listfiles.css">' +
+            '<link rel="stylesheet" href="/css/menu.css">' +
+            '<link rel="stylesheet" href="/css/titles.css">' +
+             '<link rel="stylesheet" href="/css/listfiles.css">' +
             markdownExtensions.getStylesheetInclude() +
             '<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">'+
             '<meta name="viewport" content="width=device-width, initial-scale=1">' +
@@ -42,7 +42,7 @@ module.exports = {
         let next = mdConverter.getMetadata().next;
         let nextTitle = mdConverter.getMetadata().nexttitle;
 
-        return '<script src="https://button.glitch.me/button.js" data-style="glitch"></script><script src="/loadiframe.js"></script>' +
+        return '<script src="https://button.glitch.me/button.js" data-style="glitch"></script><script src="/js/loadiframe.js"></script>' +
             '<hr>' +
             (process.env.COPYRIGHT || 'Change environment variable in .env file: COPYRIGHT=message') +
             '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118123196-1"></script>' +

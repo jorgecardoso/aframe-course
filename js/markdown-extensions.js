@@ -25,8 +25,6 @@ module.exports = {
         }
     },
    getStylesheetInclude: function() {
-      return '<link rel="stylesheet" href="/markdown-extensions.css">';
+      return '<link rel="stylesheet" href="/css/markdown-extensions.css">';
    }
 };
-
-var zemba = function() {}

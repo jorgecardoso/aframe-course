@@ -5,11 +5,11 @@ const express = require('express')
 const fs = require('fs')
 
 const app = express()
-const markdownExtensions = require('./markdown-extensions');
-const pageComponents = require('./page-components');
+const markdownExtensions = require('./js/markdown-extensions');
+const pageComponents = require('./js/page-components');
 
-
-
+app.use('/js', express.static('js'))
+app.use('/css', express.static('css'))
 app.use('/examples', express.static('examples'))
 app.use('/exercises', express.static('exercises'))
 
@@ -30,7 +30,6 @@ app.get("/listfiles.html", function (req, res) {
 });
 
 app.get("/:name.:ext", function (req, res) {  
-
   if (fs.existsSync(req.params['name']+'.'+req.params['ext'])) {
     res.sendFile(req.params['name']+'.'+req.params['ext'], {root: '.'});
   } else {
