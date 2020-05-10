@@ -17,7 +17,7 @@ ol.menu a {
   box-sizing: border-box;
 }
 
-:target {
+.menu .active {
   outline: 4px solid blue;
 }
 ol.menu:first-of-type li:first-of-type {

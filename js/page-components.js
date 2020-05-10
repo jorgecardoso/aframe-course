@@ -1,8 +1,10 @@
+// TODO: use template engine (https://github.com/eta-dev/eta)
+
 const showdown = require('showdown')
 const showdownHighlight = require("showdown-highlight")
 const markdownExtensions = require("./markdown-extensions.js");
 const converter = new showdown.Converter({
-    extensions: [showdownHighlight, markdownExtensions.example, markdownExtensions.exercise, markdownExtensions.refexample]
+    extensions: [showdownHighlight, markdownExtensions.example, markdownExtensions.exercise, markdownExtensions.refexample, markdownExtensions.imgexample]
 })
 converter.setOption('metadata', 'true');
 converter.setFlavor('github');
@@ -12,7 +14,7 @@ module.exports = {
         let style = mdConverter.getMetadata().style;
        
 
-        let h = '<html lang="en"><head><title>A-Frame USJ' + (title ? ": " + title : "") + '</title>' +
+        let h = '<html lang="en"><head><title>A-Frame Course' + (title ? ": " + title : "") + '</title>' +
             ((style !== undefined) ? '<link rel="stylesheet" href="' + style + '">' : '') +
             '<link rel="stylesheet" href="/css/menu.css">' +
             '<link rel="stylesheet" href="/css/titles.css">' +
@@ -28,7 +30,7 @@ module.exports = {
         let style = mdConverter.getMetadata().style;
        
 
-        let h = '<html lang="en"><head><title>A-Frame USJ' + (title ? ": " + title : "") + '</title>' +
+        let h = '<html lang="en"><head><title>A-Frame Course' + (title ? ": " + title : "") + '</title>' +
 
             '<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">'+
             '<meta name="viewport" content="width=device-width, initial-scale=1">' +
@@ -41,7 +43,7 @@ module.exports = {
         let next = mdConverter.getMetadata().next;
         let nextTitle = mdConverter.getMetadata().nexttitle;
 
-        let h = '<body>' +
+        let h = '' +
             '<p><a href="index.html">Home</a>' +
             (prev !== undefined ? ' | <a href="' + prev + '.html">Previous: ' + prevTitle + '</a> ' : '') +
             (next !== undefined ? ' | <a href="' + next + '.html">Next: ' + nextTitle + '</a> ' : '') +
@@ -70,6 +72,7 @@ module.exports = {
 '</script>'+
 '<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>'+
       '</script><script src="/js/loadiframe.js"></script>' +
+            '</script><script src="/js/highlightmenu.js"></script>' +
             '<hr>' +
             (process.env.COPYRIGHT || 'Change environment variable in .env file: COPYRIGHT=message') +
             '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118123196-1"></script>' +
@@ -114,25 +117,25 @@ module.exports = {
 
 var makeMenu = function() {
   return '<ol class="menu">'+
-  '<li id="index"> <a href="/index.html#index">Home</a></li>'+
-  '<li id="intro-glitch"> <a href="0010-intro-glitch.html#intro-glitch">Intro to Glitch</a></li>'+
-  '<li id="intro-html"> <a href="0020-intro-html.html#intro-html">Intro to HTML</a></li>'+
-  '<li id="primitives-components"> <a href="0100-primitives-components.html#primitives-components">Primitives and Components</a></li>' +
-    '<li id="aframewebsite"> <a href="0200-aframe-website.html#aframewebsite">A-Frame Website</a> </li>' +
-  '<li id="text"> <a href="0300-text.html#text">Text</a> </li>' +
-  '<li id="textures"> <a href="0400-textures.html#textures">Textures</a> </li>' +
-  '<li id="environments"> <a href="0500-environments.html#environments">Environments</a> </li>' +
-  '<li id="portals"> <a href="0600-portals.html#portals" >Portals</a> </li>' +
-  '<li id="360vr"> <a href="0700-360vr.html#360vr">360º VR</a> </li>' +
-  '<li id="lights"> <a href="0800-lights.html#lights">Lights</a> </li>' +
-  '<li id="3dmodels"> <a href="0900-3d-models.html#3dmodels">3D Models</a> </li>' +
-  '<li id="magicavoxel"> <a href="1000-magica-voxel.html#magicavoxel">Magica Voxel</a> </li>' +
-  '<li id="interactions"> <a href="1100-interactions.html#interactions" >Interactions</a> </li>' +
-  '<li id="animations"> <a href="1200-animations.html#animations">Animations</a> </li>' +
+  '<li id="index"> <a href="/index.html>Home</a></li>'+
+  '<li id="intro-glitch"> <a href="0010-intro-glitch.html">Intro to Glitch</a></li>'+
+  '<li id="intro-html"> <a href="0020-intro-html.html">Intro to HTML</a></li>'+
+  '<li id="primitives-components"> <a href="0100-primitives-components.html">Primitives and Components</a></li>' +
+    '<li id="aframewebsite"> <a href="0200-aframe-website.html">A-Frame Website</a> </li>' +
+  '<li id="text"> <a href="0300-text.html">Text</a> </li>' +
+  '<li id="textures"> <a href="0400-textures.html">Textures</a> </li>' +
+  '<li id="environments"> <a href="0500-environments.html">Environments</a> </li>' +
+  '<li id="portals"> <a href="0600-portals.html" >Portals</a> </li>' +
+  '<li id="360vr"> <a href="0700-360vr.html">360º VR</a> </li>' +
+  '<li id="lights"> <a href="0800-lights.html">Lights</a> </li>' +
+  '<li id="3dmodels"> <a href="0900-3d-models.html">3D Models</a> </li>' +
+  '<li id="magicavoxel"> <a href="1000-magica-voxel.html">Magica Voxel</a> </li>' +
+  '<li id="interactions"> <a href="1100-interactions.html" >Interactions</a> </li>' +
+  '<li id="animations"> <a href="1200-animations.html">Animations</a> </li>' +
   
-  '<li id="sound"> <a href="1300-sound.html#sound" >Sound</a> </li>' +
+  '<li id="sound"> <a href="1300-sound.html" >Sound</a> </li>' +
   //'<li> <a href="10-proximity.html" >10. Proximity Detection</a> </li>' +
   //  '<li> <a href="11-superhands.html" >11. Super Hands</a> </li>' +
-'<li id="listfiles"> <a href="/listfiles.html#listfiles" >List of all files</a> </li>' +
+'<li id="listfiles"> <a href="/listfiles.html" >List of all files</a> </li>' +
     '</ol>';
 }

@@ -51,7 +51,9 @@ The position component allows us to set the position of the 3D object in 3D spac
 
 :::example 0100-primitives-01-position
 
-Notice that the position value for the box is "0 2 -2". This means that the box's center is two meters in front of the user (z: -2) and two meters above the ground (y: 2).
+Notice that the position value for the box is "0 2 -2". This means that the box's center is two meters in front of the user (z: -2) and two meters above the ground (y: 2). (In A-Frame it is customary to interpret position and lengths in meters.) 
+
+If no position is given, the object will be placed at (0, 0, 0).
 
 It's important to understand that, in A-Frame, the origin (0, 0, 0) is at the user's feet. Also, by default, when vieweing the VE in a mobile or desktop device without positional tracking, the user's eyes will be set at (0, 1.6, 0) &ndash; 1.6 meters above the ground.
 
@@ -79,6 +81,8 @@ Several attributes are used to set the final size of a 3D object.
 :::example 0100-primitives-02-size
 
 To define the size of a box you can use the `width`, `height`, and `depth` attributes to control the length in the x, y, and z axes.
+
+
 
 In example :::ref 0100-primitives-02-size, notice how our box is now taller:
 
@@ -225,3 +229,4 @@ Make a new file and:
 :::exercise https://aframe-usj-exercises.glitch.me/exercises/primitives-05.html
 
 ## References
+By default, if no size is specified, the box assumes a size of 1 meter wide, 1 meter tall, and 1 meter in depth.

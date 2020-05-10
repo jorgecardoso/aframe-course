@@ -1,6 +1,6 @@
 {
-  "name": "A-Frame Course",
-  "version": "0.0.2",
+  "name": "A-FrameCourse",
+  "version": "0.0.3",
   "description": "A-Frame Course materials",
   "author": "Jorge C. S. Cardoso <jorgecardoso@ieee.org>",
   "keywords": [
@@ -19,7 +19,7 @@
     "showdown-highlight": "^2.1.4"
   },
   "engines": {
-    "node": "8.1.x"
+    "node": "12.x"
   },
   "license": "MIT"
 }

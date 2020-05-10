@@ -22,6 +22,9 @@ figure>figure>img {
 figure>img {
   max-width: 400px;
 }
+.imgexample {
+  max-width: 600px;
+}
 figure>img.fullwidth {
   max-width: 100%;
 }
