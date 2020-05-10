@@ -8,28 +8,29 @@ style: css/index1.css
 
 ## Topics
 
-### Intro to VR
 
-### Intro to Glitch
+### Before you start
 
-1. <a href="0-intro-glitch.html">Intro to Glitch</a>
+1. <a href="0010-intro-glitch.html">Intro to Glitch</a>
+1. <a href="0020-intro-html.html">Intro to HTML</a>
 
 ### A-Frame Basics
-1. Navigating A-Frame Website
-1. <a href="1-basics-1.html">Basics 1 - Primitives</a>
-1. <a href="1-basics-2.html">Basics 2 - Lights, Text</a>
-1. <a href="2-textures.html">Textures</a>
-1. <a href="3-environments.html">Environments</a>
-1. <a href="8-portals.html" >Portals</a>
-1. <a href="8-portals.html" >360º VR</a>
+
+1. <a href="0100-primitives-components.html">Primitives and Components</a>
+1. <a href="0200-aframe-website.html">A-Frame Website</a>
+1. <a href="0300-text.html">Text</a>
+1. <a href="0400-textures.html">Textures</a>
+1. <a href="0500-environments.html">Environments and other components</a>
+1. <a href="0600-portals.html" >Portals</a>
+1. <a href="0700-360vr.html" >360º VR</a>
 
 ### A-Frame Intermediate
-
-1. <a href="4-3d-models.html">3D Models</a>
-1. <a href="5-magica-voxel.html">Magica Voxel</a>
-1. <a href="6-interactions.html" >Interactions</a>
-1. <a href="7-animations.html" >Animations</a>
-1. <a href="9-sound.html" >Sound</a>
+1. <a href="0800-lights.html">Lights</a>
+1. <a href="0900-3d-models.html">3D Models</a>
+1. <a href="1000-magica-voxel.html">Magica Voxel</a>
+1. <a href="1100-interactions.html" >Interactions</a>
+1. <a href="1200-animations.html" >Animations</a>
+1. <a href="1300-sound.html" >Sound</a>
 
 ### A-Frame Advanced
 

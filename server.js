@@ -42,7 +42,7 @@ app.get("/:name.:ext", function (req, res) {
       //var html = converter.makeHtml(data);
       //console.log(head(converter));
       //res.send(pageComponents.makeHead(converter) + html + pageComponents.makeFooter(converter));
-      res.send(pageComponents.makePage(data, false));
+      res.send(pageComponents.makePage(data, false, false));
     })
   }
 })

@@ -1,36 +1,105 @@
-.example{
-  width:600px; 
-  height:400px;
-  position:relative;
-  
-   background-color:tomato; 
-  display:flex; 
-  justify-content: center; 
-  align-items:center;
+html {
+	scroll-behavior: smooth;
+}
+body {
+  max-width: 800px;
+  margin: 5px auto;
+  font-size: 1.2rem;
 }
 
-.example>iframe {
-position:absolute; 
-  
-top: 0; 
+figure {
+  text-align: center;
+}
+
+figure>figure {
+  display: inline-block;
+}
+
+figure>figure>img {
+  max-width:200px;
+}
+
+figure>img {
+  max-width: 400px;
+}
+figure>img.fullwidth {
+  max-width: 100%;
+}
+.example-container {
+  text-align: center;
+}
+.example,.exercise,.exercise a {
+  width: 600px;
+  height: 400px;
+  position: relative;
+
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      margin: 0 auto;
+}
+
+.example > iframe, .exercise > iframe {
+  position: absolute;
+
+  top: 0;
   left: 0;
+  border-width: 0;
 }
-.example>div{
-  width:100%;
-  height:100%;
+.example > div, .exercise  div{
+  width: 100%;
+  height: 100%;
 }
-.example>div>img {
-  position:absolute;
+.example > div > img, .exercise  div img {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  outline: 1px dashed black;
 }
-.example span {
- position:absolute;
+.example span,.exercise span {
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-   text-align:center;
-  background-color:rgba(255, 255, 255, 0.6);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+
+.exercise,.exercise a {
+  width: 400px;
+  height: 300px;
+  position: relative;
+
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exercise  div{
+  width: 100%;
+  height: 100%;
+}
+.exercise  div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 1px dashed black;
+}
+.exercise span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
 }

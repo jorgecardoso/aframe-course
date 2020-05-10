@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text - 01</title>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky color="lightblue"></a-sky>
+
+      <a-box
+        position="0 2 -2"
+        width="1"
+        height="1"
+        depth="1"
+        rotation="0 0 0"
+        color="red"
+      >
+      </a-box>
+
+      <a-text
+        position="0 2 -2"
+        value="Hello, A-Frame World!"
+        align="center"
+      ></a-text>
+
+      <a-text
+        position="0 2.5 -1.5"
+        value="This should be in front of red cube"
+        align="center"
+        color="palegreen"
+      ></a-text>
+
+      <a-text
+        position="0 2 -1.5"
+        width="1.5"
+        value="This should be in front of red cube"
+        align="center"
+        color="palegreen"
+      ></a-text>
+      
+    </a-scene>
+  </body>
+</html>
