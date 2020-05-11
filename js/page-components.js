@@ -117,7 +117,7 @@ module.exports = {
 
 var makeMenu = function() {
   return '<ol class="menu">'+
-  '<li id="index"> <a href="/index.html>Home</a></li>'+
+  '<li id="index"> <a href="/index.html">Home</a></li>'+
   '<li id="intro-glitch"> <a href="0010-intro-glitch.html">Intro to Glitch</a></li>'+
   '<li id="intro-html"> <a href="0020-intro-html.html">Intro to HTML</a></li>'+
   '<li id="primitives-components"> <a href="0100-primitives-components.html">Primitives and Components</a></li>' +

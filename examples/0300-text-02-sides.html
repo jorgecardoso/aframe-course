@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text - 02 - Sides</title>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-webcentric-component@0.0.2/dist/aframe-webcentric-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene webcentric>
+      <a-sky color="blue"></a-sky>
+
+      <a-text
+        position="0 2 -2"
+        value="I render from the front!"
+        side="front"
+      ></a-text>
+
+      <a-text
+        position="0 1.5 -2"
+        value="I render from the back!"
+        side="back"
+      ></a-text>
+
+      <a-text
+        position="0 1 -2"      
+        value="I render from both sides!"
+        side="double"
+      ></a-text>
+
+      <a-entity>
+        <a-camera></a-camera>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>

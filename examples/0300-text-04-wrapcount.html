@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text - 04 - Wrapcount</title>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-webcentric-component@0.0.2/dist/aframe-webcentric-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene webcentric>
+      <a-sky color="blue"></a-sky>
+
+      <a-text
+        position="0 3 -2"
+        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus arcu semper risus mollis, tempus ultrices sapien mattis."
+      ></a-text>
+
+      <a-text
+        position="0 1.5 -2"
+        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc tempus arcu semper risus mollis, tempus ultrices sapien mattis.Phasellus vel ligula in turpis bibendum consectetur in id diam."
+        wrap-count="20"
+        width="2.5"
+      ></a-text>
+
+      <a-entity>
+        <a-camera></a-camera>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>

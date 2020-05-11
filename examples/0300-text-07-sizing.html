@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text - 07 - Sizing</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-webcentric-component@0.0.2/dist/aframe-webcentric-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene webcentric>
+      <a-sky color="lightblue"></a-sky>
+
+      <a-box
+        width="5"
+        depth="1"
+        height="5"
+        position="0 2 -2.6"
+        color="black"
+      ></a-box>
+
+      <a-text
+        position="-2.5 3 -2"
+        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+      ></a-text>
+
+      <a-text
+        position="-2.5 2 -2"
+        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+        width="2.5"
+      ></a-text>
+
+      <a-text
+        position="-2.5 1 -2"
+        value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+        width="5"
+      ></a-text>
+      <a-entity>
+        <a-camera></a-camera>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
