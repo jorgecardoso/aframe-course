@@ -30,7 +30,7 @@ figure>img.fullwidth {
 }
 
 .note {
-    background: #ffff5e;
+    background: #ffcd83;
     padding: 0.5em 0.5em;
     margin: 1em 0;
 }
@@ -38,22 +38,29 @@ figure>img.fullwidth {
     content: "Note: ";
     font-weight: bold;
 }
-.note>p {
-  margin:0;
+.note>* {
+  margin: 0;
 }
 
-.tryout {
+.note.tryout {
   background: #92d19a;
-  padding: 0.5em 0.5em;
-    margin: 1em 0;
+ 
 }
-.tryout::before {
+.note.tryout::before {
     content: "Tryout: ";
     font-weight: bold;
     margin-bottom: 1em;
 }
-.tryout>* {
+.note.tryout>* {
   margin: 1em 0 0 0;
+}
+
+.note.hint {
+  background: #8cd0ea;
+}
+.note.hint>p::before {
+    content: "Hint: ";
+
 }
 
 .example-container {

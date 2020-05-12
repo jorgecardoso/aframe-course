@@ -28,7 +28,8 @@ After we assign an `id` to the image to be used as texture, we can then refer to
 ```
 
 
-:::note It's important to note that inside the `<a-assets>` the `id` does not have a hash (#) symbol. But when using that `id` in a `src` attribute, we must add the hash (#).
+:::note 
+It's important to note that inside the `<a-assets>` the `id` does not have a hash (#) symbol. But when using that `id` in a `src` attribute, we must add the hash (#).
 :::
 
 ## Repeating

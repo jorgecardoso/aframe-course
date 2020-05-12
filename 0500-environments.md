@@ -43,10 +43,11 @@ The name of the preset can be one of: 'none', 'default', 'contact', 'egypt', 'ch
 
 :::example 0500-environments-01
 
-:::note This element is used in a slightly different way from previous ones: we use a generic `<a-entity>` and them inside the `environment` attribute we define the various details of the environment (`preset` is just one). Also note that the syntax is `parameter:value` instead of `parameter=value`.
+:::note 
+This element is used in a slightly different way from previous ones: we use a generic `<a-entity>` and them inside the `environment` attribute we define the various details of the environment (`preset` is just one). Also note that the syntax is `parameter:value` instead of `parameter=value`.
 :::
 
-:::tryout
+:::note tryout
 
 1. Explore the different presets by running the example and changing the preset name.
 
@@ -124,7 +125,8 @@ The most simple way is to use a particle system preset. There are presets for `r
 In the example above, we are using algo the Environment component, but we can use the Particle System without the Environment. 
 
 
-:::note There is a slight incompatibility between Environment and Particle System. For them to work together you need to disable the fog in the Environment: 
+:::note 
+There is a slight incompatibility between Environment and Particle System. For them to work together you need to disable the fog in the Environment: 
 
 ```html
 
@@ -133,7 +135,7 @@ In the example above, we are using algo the Environment component, but we can us
 ```
 :::
 
-:::tryout
+:::note tryout
 
 1. In the example above, try changing the preset (we may need to adjust the sky's color to see the particles).
 

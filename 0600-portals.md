@@ -92,7 +92,7 @@ If you don't like the appearance of the portal, you can change it to any other o
 ### Portals 02
 1. Create a scene with a forest environment and portal that looks like a black hole on the ground. The portal should link to exercise `environments-01`
 
-:::hint
+:::note hint
 Use `link="visualAspectEnabled:false"` and a `<a-circle>`
 :::
 

@@ -71,7 +71,7 @@ A nice mnemonic to remember the which axis points in what direction is to use yo
     <figcaption>Figure 2 - 3D axes mnemonic. Point the middle finger towards you and open up the index and thumb; Your fingers now point in the positive direction of the x, y, and z axes.</figcaption>
 </figure>
 
-:::tryout
+:::note tryout
 1. Try changing the position so that the box is higher in the screen and further away.
 2. Add a second box positioned on top of the first.
 :::
@@ -118,7 +118,7 @@ A cylinder uses `height` and `radius`:
 To learn what attributes a given primitive needs for setting its size, you must read the documentation in the A-Frame website.
 
 
-:::tryout
+:::note tryout
 1. In example :::ref 0100-primitives-02-size, add a second box that is wider than taller.
 :::
 
@@ -159,7 +159,7 @@ To know in which direction the object will rotate you can use the mnemonics in F
 
 The `color` attribute allows you to set the color of the primitive. You can use color names such as "red", or "green" for colors that have a pre-defined name. For general colors, you can use the hex format such as `#ff8533` (you can use any color picker to find out the hex values, e.g., https://www.w3schools.com/colors/colors_picker.asp )
 
-:::tryout
+:::note tryout
 1. In example :::ref 0100-primitives-04-color, change the color of the green box to a color chosen from https://www.w3schools.com/colors/colors_picker.asp
 :::
 
@@ -192,7 +192,7 @@ Notice that we can now move the circle to another position while keeping the sph
 :::example 0100-primitives-06-nesting
 
 
-:::tryout
+:::note tryout
 1. In the example :::ref 0100-primitives-06-nesting try changing the position of the circle and confirm that the sphere is still correctly attached to it
 :::
 

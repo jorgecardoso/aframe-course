@@ -8,46 +8,23 @@ module.exports = {
       conv.setOption("metadata", "true");
       conv.setFlavor("github");
 
-      let matches = text.matchAll(/:::note\s((?:.*[\n\r])*?):::[\n\r]/g);
+      let matches = text.matchAll(/:::note\s(.*?)[\n\r]((?:.*[\n\r])*?):::[\n\r]/g);
       let filtered = text.substring(0);
 
       for (const match of matches) {       
 
+        let cssclass = match[2]?match[1]:'';
+        let content = match[2]?match[2]:match[1];
         filtered = filtered.replace(
           match[0],
-          '<div class="note">' + conv.makeHtml(match[1].substring(0)) + "</div>"
+          '<div class="note '+cssclass+'">' + conv.makeHtml(content) + "</div>"
         );
       }
 
       return filtered;
     }
   },
-  tryout: {
-    type: "lang",
-    filter: function(text, converter, options) {
-      let matches = text.matchAll(/:::tryout\s((?:.*[\n\r])*?):::[\n\r]/g);
-      let filtered = text.substring(0);
-      for (const match of matches) {
-        //console.log(`Found ${match[0]} ${match[1]}.`);
-
-        /* console.log(
-          "match:",
-          match[0],
-          match[1],
-          match[2],
-          match.index,
-          match[0].length
-        );*/
-
-        filtered = filtered.replace(
-          match[0],
-          '<div class="tryout">' + converter.makeHtml(match[1]) + "</div>"
-        );
-      }
-      //console.log(text);
-      return filtered;
-    }
-  },
+ 
   exercise: {
     type: "lang",
     filter: function(text, converter, options) {
@@ -124,15 +101,6 @@ module.exports = {
       let filtered = text.substring(0);
       for (const match of matches) {
         //console.log(`Found ${match[0]} ${match[1]}.`);
-
-        /* console.log(
-          "match:",
-          match[0],
-          match[1],
-          match[2],
-          match.index,
-          match[0].length
-        );*/
 
         //console.log(encodeURIComponent("https://aframe-usj.glitch.me/examples/"+match[0]+".html"+match[1]))
         let id = match[1];
