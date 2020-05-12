@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Textures - 04 - Photosphere</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img
+          id="bricks"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fbrick_diffuse.jpg?1523874307941"
+        />
+        <img
+          id="classroom"
+          crossorigin="anonymous"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2FR0010059.JPG?1525432731662"
+        />
+      </a-assets>
+
+      <a-box
+        position="0.743 0.800 -1.950"
+        scale="0.25 0.25 0.25"
+        rotation="0 30 0"
+        src="#bricks"
+      ></a-box>
+      
+      <a-sky src="#classroom"></a-sky>
+
+      <a-camera wasd-controls-enabled="false"></a-camera>
+    </a-scene>
+  </body>
+</html>

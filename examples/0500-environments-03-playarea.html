@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Environments - 03 - Play area</title>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity environment="preset: tron; playArea: 10"></a-entity>
+
+      <a-box
+        position="0 0.5 -3"
+        height="1"
+        width="1"
+        depth="1"
+        color="white"
+      ></a-box>
+    </a-scene>
+  </body>
+</html>

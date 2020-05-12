@@ -19,9 +19,9 @@ This course is a Glitch project that you can copy and modify.
   1. Go to https://glitch.com/ and click "Sign in" 
   <img src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fglitch-signin.png?1524521776083" width="600" height="400">
 
-1. Remix the AFrame USJ project
+1. Remix the A-Frame Course project
 
-  1. Go back to http://aframe-usj.glitch.me/index.html and click on the "Remix on Glitch" button to create a copy of this project.
+  1. Go back to http://aframe-course.glitch.me/index.html and click on the "Remix on Glitch" button to create a copy of this project.
   <img src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fglitch-remix.png?1524522201070" width="600" height="400">
   
   1. This will create a copy and take you to the editor of Glitch

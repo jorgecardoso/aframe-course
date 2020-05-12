@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Textures - 03 - Video</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <video
+          id="video"
+          autoplay
+          loop="true"
+          muted
+          crossorigin="anonymous"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2FUSJ%20New%20Campus%20Promo%20Video.mp4?v=1525485658950"
+        ></video>
+      </a-assets>
+
+      <a-video src="#video" position="0 2.7 -2" width="2" height="1"></a-video>
+
+      <a-box src="#video" position="0 1.5 -2"></a-box>
+
+      <a-sky color="lightblue"></a-sky>
+    </a-scene>
+  </body>
+</html>

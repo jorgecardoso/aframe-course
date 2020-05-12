@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Textures - 05 - Videosphere</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <video
+          id="video"
+          autoplay
+          crossorigin="anonymous"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fcity_1.webm?1524584726164"
+        ></video>
+      </a-assets>
+
+      <a-videosphere src="#video"></a-videosphere>
+      <!--<a-sky src="#video"></a-sky>-->
+      <a-camera wasd-controls-enabled="false"></a-camera>
+    </a-scene>
+  </body>
+</html>

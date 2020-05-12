@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Textures - 01</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img
+          id="boxTexture"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Farrow.png?1525121394534"
+        />
+        <img
+          id="treebark"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Ftreebark.jpg?v=1589191472031"
+        />
+        <img
+          id="panorama"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2F26251779237_2707dd2084_k.jpg?1523875921384"
+        />
+        <img
+          id="moon"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fmoon_1024.jpg?v=1589191213564"
+        />
+      </a-assets>
+
+      <a-box
+        src="#boxTexture"
+        position="-2 0 -3"
+        height="2"
+        rotation="0 45 0"
+      ></a-box>
+
+      <a-sphere src="#moon" position="-2 2 -3" radius="1"></a-sphere>
+
+      <a-cylinder
+        src="#treebark"
+        position="2 1 -3"
+        height="3"
+        radius="0.5"
+      ></a-cylinder>
+
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>

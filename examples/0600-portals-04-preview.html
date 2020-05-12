@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portals - 04 - Preview</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color:lightblue">
+      <a-assets>
+        <img
+          id="portals03preview"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fscreenshot-portals%20-%2003%20-%20preview-1589268083342.png?v=1589268160819"
+        />
+        <img
+          id="portals04preview"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fscreenshot-portals%20-%2004%20-%20preview-1589268108431.png?v=1589268161303"
+        />
+        <img
+          id="portals05preview"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Fscreenshot-portals%20-%2005%20-%20preview-1589268118539.png?v=1589268155556"
+        />
+      </a-assets>
+
+      <a-entity environment="preset: forest; playArea: 5"></a-entity>
+
+      <a-link
+        position="-2 2 -2"
+        image="#portals03preview"
+        href="/examples/0600-portals-03-preview.html"
+        title="Go to first environment"
+      ></a-link>
+      <a-cylinder position="-2 0.5 -2" radius="0.25"></a-cylinder>
+
+      <a-link
+        position="2 2 -2"
+        image="#portals05preview"
+        href="/examples/0600-portals-05-preview.html"
+        title="Go to third environment"
+      ></a-link>
+      <a-cylinder position="2 0.5 -2" radius="0.25"></a-cylinder>
+
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>

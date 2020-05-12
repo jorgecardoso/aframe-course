@@ -28,6 +28,34 @@ figure>img {
 figure>img.fullwidth {
   max-width: 100%;
 }
+
+.note {
+    background: #ffff5e;
+    padding: 0.5em 0.5em;
+    margin: 1em 0;
+}
+.note>p::before {
+    content: "Note: ";
+    font-weight: bold;
+}
+.note>p {
+  margin:0;
+}
+
+.tryout {
+  background: #92d19a;
+  padding: 0.5em 0.5em;
+    margin: 1em 0;
+}
+.tryout::before {
+    content: "Tryout: ";
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.tryout>* {
+  margin: 1em 0 0 0;
+}
+
 .example-container {
   text-align: center;
 }

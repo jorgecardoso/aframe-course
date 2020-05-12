@@ -4,7 +4,7 @@ const showdown = require('showdown')
 const showdownHighlight = require("showdown-highlight")
 const markdownExtensions = require("./markdown-extensions.js");
 const converter = new showdown.Converter({
-    extensions: [showdownHighlight, markdownExtensions.example, markdownExtensions.exercise, markdownExtensions.refexample, markdownExtensions.imgexample]
+    extensions: [showdownHighlight, markdownExtensions.example, markdownExtensions.exercise, markdownExtensions.refexample, markdownExtensions.imgexample,markdownExtensions.note,markdownExtensions.tryout]
 })
 converter.setOption('metadata', 'true');
 converter.setFlavor('github');
