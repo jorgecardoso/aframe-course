@@ -1,3 +1,10 @@
+.js-toc {
+  position: fixed;
+  width: calc((100vw - 800px) / 2);
+  max-width: 300px;
+  top: 100px;
+  left: 10px;
+}
 ol.menu {
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +52,10 @@ ol.menu li a {
 
 @media only print {
   ol.menu  {
+    display: none;
+  }
+  
+  .js-toc {
     display: none;
   }
 }

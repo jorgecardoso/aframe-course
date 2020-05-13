@@ -1,0 +1,115 @@
+<html lang="en">
+  <head>
+    <title>A-Frame Course - <%= it.pageTitle %></title>
+
+    <% it.styles.forEach(function(style){ %>
+    <link rel="stylesheet" href="<%= style %>" />
+    <% }) %>
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/titles.css" />
+    <link rel="stylesheet" href="/css/listfiles.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <ol class="menu">
+      <li id="index"><a href="/index.html">Home</a></li>
+      <li id="intro-glitch">
+        <a href="0010-intro-glitch.html">Intro to Glitch</a>
+      </li>
+      <li id="intro-html"><a href="0020-intro-html.html">Intro to HTML</a></li>
+      <li id="primitives-components">
+        <a href="0100-primitives-components.html">Primitives and Components</a>
+      </li>
+      <li id="aframewebsite">
+        <a href="0200-aframe-website.html">A-Frame Website</a>
+      </li>
+      <li id="text"><a href="0300-text.html">Text</a></li>
+      <li id="textures"><a href="0400-textures.html">Textures</a></li>
+      <li id="environments">
+        <a href="0500-environments.html">Environments</a>
+      </li>
+      <li id="portals"><a href="0600-portals.html">Portals</a></li>
+      <li id="360vr"><a href="0700-360vr.html">360º VR</a></li>
+      <li id="lights"><a href="0800-lights.html">Lights</a></li>
+      <li id="3dmodels"><a href="0900-3d-models.html">3D Models</a></li>
+      <li id="magicavoxel">
+        <a href="1000-magica-voxel.html">Magica Voxel</a>
+      </li>
+      <li id="interactions">
+        <a href="1100-interactions.html">Interactions</a>
+      </li>
+      <li id="animations"><a href="1200-animations.html">Animations</a></li>
+      <li id="sound"><a href="1300-sound.html">Sound</a></li>
+
+      <li id="listfiles"><a href="/listfiles.html">List of all files</a></li>
+    </ol>
+    <div class="js-toc"></div>
+
+    <%~ it.body %>
+
+    <h2 id="disqus_comments">Comments</h2>
+    Notice anything wrong? Have a doubt?
+    <div id="disqus_thread"></div>
+    <script>
+      //var disqus_config = function () {
+      //this.page.url = PAGE_URL;  // Replace PAGE_URL with your pages canonical URL variable
+      //this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pages unique identifier variable
+      //};
+      (function() {
+        // DONT EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement("script");
+        s.src =
+          "https://virtual-reality-environments-course-materials.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+
+    <hr />
+    <%~ it.copyright %>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-118123196-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-118123196-1");
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
+
+    <script src="/js/loadiframe.js"></script>
+    <script src="/js/highlightmenu.js"></script>
+    <script>
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: ".js-toc",
+        // Where to grab the headings to build the table of contents.
+        contentSelector: "body",
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: "h1, h2, h3",
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true
+      });
+    </script>
+  </body>
+</html>

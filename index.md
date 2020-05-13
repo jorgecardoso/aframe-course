@@ -31,6 +31,7 @@ style: css/index1.css
 1. <a href="1100-interactions.html" >Interactions</a>
 1. <a href="1200-animations.html" >Animations</a>
 1. <a href="1300-sound.html" >Sound</a>
+1. <a href="1400-multi-textures.html" >Multi texture component</a>
 
 ### A-Frame Advanced
 
@@ -93,15 +94,15 @@ style: css/index1.css
 
 ### External components
 1. Animation
-  1. Include: ` <script src="https://unpkg.com/aframe-animation-component@^4.1.2/dist/aframe-animation-component.min.js"></script>`
+  1. Include: ` <script src="https://unpkg.com/aframe-animation-component/dist/aframe-animation-component.min.js"></script>`
   2. Doc: https://github.com/ngokevin/kframe/tree/master/components/animation/
 1. Event-Set
-  1. Include: ` <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>`
+  1. Include: ` <script src="https://unpkg.com/aframe-event-set-component/dist/aframe-event-set-component.min.js"></script>`
 1. Environments
   1. Include: `<script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>`
   2. Doc: https://github.com/feiss/aframe-environment-component/
 2. Particle Systems
-  1. Include: `<script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>`
+  1. Include: `<script src="https://unpkg.com/aframe-particle-system-component/dist/aframe-particle-system-component.min.js"></script>`
   2. Doc: https://github.com/IdeaSpaceVR/aframe-particle-system-component
 3. Oceans
   1. Include: `<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.0.2/dist/aframe-extras.min.js"></script>`

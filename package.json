@@ -8,7 +8,10 @@
     "virtual reality",
     "vr"
   ],
-  "repository" : {"type": "git", "url": "https://github.com/jorgecardoso/aframe-course"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgecardoso/aframe-course"
+  },
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -16,7 +19,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "showdown": "^1.9.1",
-    "showdown-highlight": "^2.1.4"
+    "showdown-highlight": "^2.1.4",
+    "eta": "^1.1.1"
   },
   "engines": {
     "node": "12.x"

@@ -30,19 +30,27 @@ app.get("/listfiles.html", function (req, res) {
 });
 
 app.get("/:name.:ext", function (req, res) {  
+  console.log("Serving ", req.params['name']+'.'+req.params['ext']);
+  
   if (fs.existsSync(req.params['name']+'.'+req.params['ext'])) {
     res.sendFile(req.params['name']+'.'+req.params['ext'], {root: '.'});
   } else {
     var filename = req.params['name'] + '.md';
 
+    if (!fs.existsSync(filename)) {
+      console.warn("File ", filename, " does not exist");
+      res.status(404)        // HTTP status 404: NotFound
+         .send('Not found');
+      return;
+    } 
+    
     fs.readFile(filename, 'utf8', function(err, data) {
       if (err) {
         return console.log(err);
       }
-      //var html = converter.makeHtml(data);
-      //console.log(head(converter));
-      //res.send(pageComponents.makeHead(converter) + html + pageComponents.makeFooter(converter));
-      res.send(pageComponents.makePage(data, false, false));
+      
+      //res.send(pageComponents.makePage(data, false, false));
+      res.send(pageComponents.makePageFrom('chapter', data));
     })
   }
 })
@@ -53,7 +61,8 @@ app.use("/viewsource", function (req, res) {
   if (err) {
     return console.log(err);
   }
-    res.send(pageComponents.makePage("---\ntitle: Source of "+req.path+"\n---\n\n```html\n" + data + "\n```", false, true));
+  //res.send(pageComponents.makePage("---\ntitle: Source of "+req.path+"\n---\n\n```html\n" + data + "\n```", false, true));
+    res.send(pageComponents.makePageFrom('source', data, req.path));
 
 });
 

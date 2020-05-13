@@ -8,23 +8,28 @@ module.exports = {
       conv.setOption("metadata", "true");
       conv.setFlavor("github");
 
-      let matches = text.matchAll(/:::note\s(.*?)[\n\r]((?:.*[\n\r])*?):::[\n\r]/g);
+      let matches = text.matchAll(
+        /:::note\s(.*?)[\n\r]((?:.*[\n\r])*?):::[\n\r]/g
+      );
       let filtered = text.substring(0);
 
-      for (const match of matches) {       
-
-        let cssclass = match[2]?match[1]:'';
-        let content = match[2]?match[2]:match[1];
+      for (const match of matches) {
+        let cssclass = match[2] ? match[1] : "";
+        let content = match[2] ? match[2] : match[1];
         filtered = filtered.replace(
           match[0],
-          '<div class="note '+cssclass+'">' + conv.makeHtml(content) + "</div>"
+          '<div class="note ' +
+            cssclass +
+            '">' +
+            conv.makeHtml(content) +
+            "</div>"
         );
       }
 
       return filtered;
     }
   },
- 
+
   exercise: {
     type: "lang",
     filter: function(text, converter, options) {
@@ -135,5 +140,8 @@ module.exports = {
   },
   getStylesheetInclude: function() {
     return '<link rel="stylesheet" href="/css/markdown-extensions.css">';
+  },
+  getStylesheet: function() {
+    return "/css/markdown-extensions.css";
   }
 };

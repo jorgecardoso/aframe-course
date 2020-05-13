@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <title>A-Frame Course - <%= it.pageTitle %></title>
+
+    <% it.styles.forEach(function(style){ %>
+    <link rel="stylesheet" href="<%= style %>" />
+    <% }) %>
+
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    
+
+    <%~ it.body %>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-118123196-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-118123196-1");
+    </script>
+    
+  </body>
+</html>
