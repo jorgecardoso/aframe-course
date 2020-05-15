@@ -20,7 +20,8 @@
     "express": "^4.17.1",
     "showdown": "^1.9.1",
     "showdown-highlight": "^2.1.4",
-    "eta": "^1.1.1"
+    "eta": "^1.1.1",
+    "cross-env": "^7.0.2"
   },
   "engines": {
     "node": "12.x"

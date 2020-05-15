@@ -1,11 +1,10 @@
 ---
-title: Basics 2
+title: Lights
 ---
 
 
-# Basics 2 - Lights, Text
+# Lights
 
-## Lights
 
 :::example 01-basics-06-lights
 
@@ -25,20 +24,6 @@ After you adjusted the light, you can copy the values of the attributes back to 
 
 1. Use the inspector to change the point light so that it illuminates objects from the right side
 
-
-## Text 
-:::example 01-basics-07-text
-
-
-Text can be added with the `<a-text>` primitive:
-
-```html
-<a-text position="0 2 -2" value="Hello, A-Frame World!" align="center"></a-text>
-```
-
-You specify the text in the `value` attribute and you can position it just like any other primitive.
-
-Color can also be specified just like in any other primitive.
 
   
 ## Exercises

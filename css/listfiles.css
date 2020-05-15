@@ -1,11 +1,46 @@
+:root {
+  --list-space: 1em;
+}
 .exampleList{
 
   float:left;
+  max-width:50%;
 }
-
-
-
-
+.exampleList .sep {
+  margin-top: var(--list-space);
+}
+/*
+.exampleList li:not([id^="01"])+li[id^="01"] {
+  margin-top: var(--list-space);
+}
+.exampleList li:not([id^="02"])+li[id^="02"] {
+  margin-top: var(--list-space);
+}
+.exampleList li:not([id^="03"])+li[id^="03"] {
+  margin-top: var(--list-space);
+}
+.exampleList li:not([id^="04"])+li[id^="04"] {
+  margin-top: var(--list-space);
+}
+.exampleList li:not([id^="05"])+li[id^="05"] {
+  margin-top: var(--list-space);
+}
+.exampleList li:not([id^="06"])+li[id^="06"] {
+  margin-top: var(--list-space);
+}
+.exampleList li:not([id^="07"])+li[id^="07"] {
+  margin-top: var(--list-space);
+}
+.exampleList li:not([id^="08"])+li[id^="08"] {
+  margin-top: var(--list-space);
+}
+.exampleList li:not([id^="09"])+li[id^="09"] {
+  margin-top: var(--list-space);
+}
+.exampleList li:not([id^="10"])+li[id^="10"] {
+  margin-top: var(--list-space);
+}
+*/
 .clearFix{
   clear: both;
 }

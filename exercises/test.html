@@ -1,0 +1,39 @@
+<head>
+  <title>My A-Frame Scene</title>
+  <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-look-at-component@1.0.0/dist/aframe-look-at-component.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aframe-mouse-dragndrop-component@latest/dist/index.js"></script>
+    
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+        <img
+          id="arrow"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Farrow.png?v=1589495753054"
+        />
+        <img
+          id="classroomPhoto"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2FR0010059.JPG?v=1525432731662"
+        />
+        <img
+          id="outsidePhoto-1"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2FR0010060.JPG?v=1589484405070"
+        />
+      </a-assets>
+
+    
+    <a-sky side="double" radius="5000" color="lightblue">
+      <a-entity scale="-1 1 1">
+       <a-image dragndrop look-at="[camera]" position="0 0 -3"  src="#arrow"> </a-image> 
+      <a-box dragndrop look-at="[camera]" position="3 0 0"  src="#arrow"></a-box>
+      </a-entity>
+     
+    </a-sky>
+     
+    
+   
+    
+  </a-scene>
+</body>

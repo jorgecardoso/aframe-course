@@ -1,0 +1,10 @@
+<div class="example-container" id="<%= it.exampleId %>">
+  Example <code><%= it.exampleId %></code> (<a href="<%= it.exampleRelativeUrl %>" target="_blank">open in new tab</a> | <a href="<%= it.exampleViewSourceRelativeUrl %>" target="_blank">view source</a>)
+    <div class="example"> 
+       <iframe data-src="<%= it.exampleRelativeUrl %>" width="100%" height="100%"></iframe>
+       <div>
+         <img class="imgexample" src="<%= it.puppeteerAddress + '/shot/?url=' + it.shotUrl %>">
+         <span><strong>Click to load.</strong><br> Use keys 'w', 'a', 's', 'd' to move around.<br>Mouse to look around.</span>
+       </div>
+    </div>
+</div>

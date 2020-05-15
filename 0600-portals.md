@@ -4,7 +4,7 @@ title: Portals
 
 # Portals
 
-:::note
+:::note warning
 The current A-Frame version has a bug in handling portals causing them to trigger even when you click outside. The examples in this chapter use version `0.8.2`
 :::
 

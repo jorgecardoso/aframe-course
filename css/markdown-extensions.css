@@ -1,72 +1,87 @@
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
   max-width: 800px;
   margin: 5px auto;
   font-size: 1.2rem;
 }
+main {
+  background-color: #ffd34f57;
+  padding: 1em 1em;
+
+}
 
 figure {
   text-align: center;
 }
 
-figure>figure {
+figure > figure {
   display: inline-block;
+  margin-left:0;
+  margin-right:0;
+  
 }
 
-figure>figure>img {
-  max-width:200px;
+figure > figure > img {
+  max-width: 200px;
 }
 
-figure>img {
+figure > img {
   max-width: 400px;
 }
 .imgexample {
   max-width: 600px;
 }
-figure>img.fullwidth {
+figure  img.fullwidth {
   max-width: 100%;
 }
 
 .note {
-    background: #ffcd83;
-    padding: 0.5em 0.5em;
-    margin: 1em 0;
+  background: #ffeed5;
+  border-left: 5px solid #ffcd83;
+  padding: 0.5em 0.5em;
+  margin: 1em 0;
 }
-.note>p::before {
-    content: "Note: ";
-    font-weight: bold;
+.note::before {
+  content: "🙃 Note";
+  font-weight: bold;
 }
-.note>* {
+.note > * {
   margin: 0;
+  margin-top: 0.5em;
+}
+.note.warning::before {
+  content: "😬 Warning";
+}
+.note.hint::before {
+  content: "🤫 Hint";
+}
+.note.tryout::before {
+  content: "🤯 Tryout";
 }
 
 .note.tryout {
-  background: #92d19a;
- 
+  background: #d6eed9;
+  border-left: 5px solid #92d19a;
 }
-.note.tryout::before {
-    content: "Tryout: ";
-    font-weight: bold;
-    margin-bottom: 1em;
-}
-.note.tryout>* {
+
+.note.tryout > * {
   margin: 1em 0 0 0;
 }
 
 .note.hint {
-  background: #8cd0ea;
+  background: #d5eef7;
+  border-left: 5px solid #8cd0ea;
 }
-.note.hint>p::before {
-    content: "Hint: ";
 
-}
 
 .example-container {
   text-align: center;
 }
-.example,.exercise,.exercise a {
+.example,
+.exercise,
+.exercise a {
   width: 600px;
   height: 400px;
   position: relative;
@@ -75,21 +90,24 @@ figure>img.fullwidth {
   display: flex;
   justify-content: center;
   align-items: center;
-      margin: 0 auto;
+  margin: 0 auto;
 }
 
-.example > iframe, .exercise > iframe {
+.example > iframe,
+.exercise > iframe {
   position: absolute;
 
   top: 0;
   left: 0;
   border-width: 0;
 }
-.example > div, .exercise  div{
+.example > div,
+.exercise div {
   width: 100%;
   height: 100%;
 }
-.example > div > img, .exercise  div img {
+.example > div > img,
+.exercise div img {
   position: absolute;
   top: 0;
   left: 0;
@@ -97,7 +115,8 @@ figure>img.fullwidth {
   height: 100%;
   outline: 1px dashed black;
 }
-.example span,.exercise span {
+.example span,
+.exercise span {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -106,11 +125,8 @@ figure>img.fullwidth {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-
-
-
-
-.exercise,.exercise a {
+.exercise,
+.exercise a {
   width: 400px;
   height: 300px;
   position: relative;
@@ -121,11 +137,11 @@ figure>img.fullwidth {
   align-items: center;
 }
 
-.exercise  div{
+.exercise div {
   width: 100%;
   height: 100%;
 }
-.exercise  div img {
+.exercise div img {
   position: absolute;
   top: 0;
   left: 0;
@@ -140,4 +156,43 @@ figure>img.fullwidth {
   transform: translate(-50%, -50%);
   text-align: center;
   background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (max-width: 768px) {
+  .example,
+  .exercise,
+  .exercise a {
+    width: 100%;
+
+    position: relative;
+
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  figure {
+    margin: 0;
+  }
+  figure > img {
+    max-width: 100%;
+  }
+  .imgexample {
+    max-width: 100%;
+  }
+}
+
+
+
+@media only print {
+  .example span {
+    display:none;
+  }
+  
+  iframe[src*="youtube"] {
+    width: 300px;
+    height: 150px;
+  }
 }

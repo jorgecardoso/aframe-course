@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <title>A-Frame Course - <%= it.pageTitle %></title>
+
+    <% it.styles.forEach(function(style){ %>
+    <link rel="stylesheet" href="<%= style %>" />
+    <% }) %>
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/titles.css" />
+    <link rel="stylesheet" href="/css/listfiles.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <%~  E.include('globalmenu') %>
+      </nav>
+      <aside class="remixonglitch">
+        <a href="https://glitch.com/edit/#!/remix/aframe-course"
+          ><img
+            alt="Remix on Glitch"
+            src="https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg"
+        /></a>
+      </aside>
+    </header>
+    <main>
+      <aside class="js-toc"></aside>
+
+      <%~ it.body %>
+    </main>
+
+    <h2 id="disqus_comments">Comments</h2>
+    Notice anything wrong? Have a doubt?
+    <div id="disqus_thread"></div>
+    <script>
+      //var disqus_config = function () {
+      //this.page.url = PAGE_URL;  // Replace PAGE_URL with your pages canonical URL variable
+      //this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pages unique identifier variable
+      //};
+      (function() {
+        // DONT EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement("script");
+        s.src =
+          "https://virtual-reality-environments-course-materials.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+
+    <hr />
+    <%~ it.copyright %>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118123196-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118123196-1');
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
+
+   
+    <script src="/js/highlightmenu.js"></script>
+    <script>
+      tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: ".js-toc",
+        // Where to grab the headings to build the table of contents.
+        contentSelector: "body",
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: "h1, h2, h3",
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true
+      });
+    </script>
+  </body>
+</html>

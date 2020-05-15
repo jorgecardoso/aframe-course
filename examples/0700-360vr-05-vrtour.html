@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>360º VR - 05 - VR Tour</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-webcentric-component@0.1.0/dist/aframe-webcentric-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene webcentric >
+      <a-assets>
+        <img
+          id="arrow"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Farrow.png?v=1589495753054"
+        />
+        <img
+          id="classroomPhoto"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2FR0010059.JPG?v=1525432731662"
+        />
+        <img
+          id="outsidePhoto-1"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2FR0010060.JPG?v=1589484405070"
+        />
+        <img
+          id="outsidePhoto-2"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2FR0010085.JPG?v=1589484383929"
+        />
+      </a-assets>
+
+      <!-- Classroom -->
+      <a-entity id="classroom" position="0 0 0">
+        <a-sky src="#classroomPhoto"> </a-sky>
+        <a-entity class="hotstpoHeading" rotation="-3.438 -129.259 0.000">
+          <a-link
+            href="#cameraPos=10000,0,0"
+            link="visualAspectEnabled:false"
+            position="0 1 -7"
+            rotation="0 28.648 0.000"
+            src="#arrow"
+          >
+            <a-image src="#arrow"> </a-image>
+          </a-link>
+        </a-entity>
+      </a-entity>
+
+      <!-- Corridor outside classroom -->
+      <a-entity id="outside1" position="10000 0 0">
+        <a-sky src="#outsidePhoto-1"> </a-sky>
+        <a-entity
+          class="hotstpoHeading"
+          position="0 1.6 0"
+          rotation="-2.177 387.892 0.000"
+        >
+          <a-link
+            id="doorPortal"
+            href="#cameraPos=0,0,0"
+            link="visualAspectEnabled:false"
+            position="0 0 -7"
+            rotation="0 0 0"
+          >
+            <a-image src="#arrow"></a-image
+          ></a-link>
+        </a-entity>
+        <a-entity
+          class="hotstpoHeading"
+          position="0 1.6 0"
+          rotation="-5.844 -223.110 0.000"
+        >
+          <a-link
+            id="corridorPortal"
+            href="#cameraPos=20000,0,0&cameraRot=-2.865,-454.126,0.000"
+            link="visualAspectEnabled:false"
+            position="0.2 0 -40"
+            rotation="-70 0 0"
+            scale="2 2 2"
+          >
+            <a-circle color="white" side="double"></a-circle>
+          </a-link>
+        </a-entity>
+      </a-entity>
+
+      <!-- Corridor  further away -->
+      <a-entity id="outside2" position="20000 0 0">
+        <a-sky src="#outsidePhoto-2"> </a-sky>
+        <a-link
+          href="#cameraPos=10000,0,0&cameraRot=-6.313,-35.910,-3.313"
+          position="-10 0 0"
+          rotation="-90 0 0"
+          link="visualAspectEnabled:false"
+        >
+          <a-circle color="white" side="double"></a-circle>
+        </a-link>
+      </a-entity>
+
+      <a-entity>
+        <a-camera id="camera" wasd-controls-enabled="false"
+          ><a-cursor></a-cursor
+        ></a-camera>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>

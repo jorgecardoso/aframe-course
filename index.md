@@ -2,8 +2,6 @@
 style: css/index1.css
 ---
 
-[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/aframe-usj)
-
 # Virtual Reality Environments course materials 
 
 ## Topics
@@ -25,6 +23,7 @@ style: css/index1.css
 1. <a href="0700-360vr.html" >360º VR</a>
 
 ### A-Frame Intermediate
+1. <a href="0750-aframe-inspector.html">A-Frame 3D Inspector</a>
 1. <a href="0800-lights.html">Lights</a>
 1. <a href="0900-3d-models.html">3D Models</a>
 1. <a href="1000-magica-voxel.html">Magica Voxel</a>

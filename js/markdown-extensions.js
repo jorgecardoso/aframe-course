@@ -1,4 +1,8 @@
+const fs = require("fs");
 const showdown = require("showdown");
+const eta = require("eta");
+
+const exampleTpl = fs.readFileSync("templates/example.eta.html", "utf-8");
 
 module.exports = {
   note: {
@@ -51,18 +55,6 @@ module.exports = {
       let matches = text.matchAll(/:::example (.+?)\s(.+)?/g);
       let filtered = text.substring(0);
       for (const match of matches) {
-        //console.log(`Found ${match[0]} ${match[1]}.`);
-
-        /*  console.log(
-          "match:",
-          match[0],
-          match[1],
-          match[2],
-          match.index,
-          match[0].length
-        );*/
-
-        //console.log(encodeURIComponent("https://aframe-usj.glitch.me/examples/"+match[0]+".html"+match[1]))
         let id = match[1];
         let hash = match[2] ? match[2] : "";
         let relativeUrl = "examples/" + id + ".html" + hash;
@@ -71,31 +63,16 @@ module.exports = {
           "https://aframe-course.glitch.me/examples/" + id + ".html" + hash
         );
 
-        let replace =
-          '<div class="example-container" id="' +
-          id +
-          '">' +
-          "<code>Example: " +
-          id +
-          '(<a href="' +
-          relativeUrl +
-          '" target="_blank">open in new tab</a> | <a href="' +
-          viewSourceRelativeUrl +
-          '" target="_blank">view source</a>):</code>' +
-          '<div class="example"> ' +
-          '  <iframe data-src="' +
-          relativeUrl +
-          '" width="100%" height="100%"></iframe>' +
-          "  <div><img class='imgexample' src='" +
-          process.env.PUPPETEER_ADDRESS +
-          "/shot/?url=" +
-          shotUrl +
-          "'>" +
-          "  <span><strong>Click to load.</strong><br> Use keys 'w', 'a', 's', 'd' to move around.<br>Mouse to look around.</span>" +
-          "</div></div></div>";
+        let replace = eta.render(exampleTpl, {
+          exampleId: id,
+          exampleRelativeUrl: relativeUrl,
+          exampleViewSourceRelativeUrl: viewSourceRelativeUrl,
+          puppeteerAddress: process.env.PUPPETEER_ADDRESS,
+          shotUrl: shotUrl
+        });
+     
         filtered = filtered.replace(match[0], replace);
       }
-      //console.log(text);
       return filtered;
     }
   },

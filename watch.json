@@ -14,7 +14,8 @@
     "include": [
       "^package\\.json$",
       "^\\.env$",
-      "\\.js$"
+      "\\.js$",
+      "\\.eta.html$"
     ]
   },
   "throttle": 5000

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>360º VR - 04 - Portal</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img
+          id="arrow"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2Farrow.png?v=1589495753054"
+        />
+        <img
+          id="classroomPhoto"
+          crossorigin="anonymous"
+          src="https://cdn.glitch.com/80978ab7-9db6-45ae-bc43-4fab16bdbb6e%2FR0010059.JPG?1525432731662"
+        />
+      </a-assets>
+
+
+      <!-- Classroom -->
+      <a-entity id="classroom" position="0 0 0">
+        <a-sky src="#classroomPhoto"> </a-sky>
+        <a-entity class="hotstpoHeading" rotation="-3.438 -129.259 0.000">
+          <a-link
+            href="#cameraPos=10000,0,0"
+            link="visualAspectEnabled:false"
+            position="0 1 -7"
+            rotation="0 28.648 0.000"
+            src="#arrow"
+          >
+            <a-image src="#arrow"> </a-image>
+          </a-link>
+        </a-entity>
+      </a-entity>
+
+      
+
+       <a-entity>
+        <a-camera id="camera" wasd-controls-enabled="false"
+          ><a-cursor></a-cursor
+        ></a-camera>
+      </a-entity>
+      
+    </a-scene>
+  </body>
+</html>
