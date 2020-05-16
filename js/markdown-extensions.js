@@ -3,6 +3,7 @@ const showdown = require("showdown");
 const eta = require("eta");
 
 const exampleTpl = fs.readFileSync("templates/example.eta.html", "utf-8");
+const youtubeTpl = fs.readFileSync("templates/youtube.eta.html", "utf-8");
 
 module.exports = {
   note: {
@@ -49,14 +50,36 @@ module.exports = {
       );
     }
   },
+  youtube: {
+    type: "lang",
+    filter: function(text, converter, options) {
+      let matches = text.matchAll(/:::youtube (.+?)\s(.+)?/g);
+      let filtered = text.substring(0);
+      for (const match of matches) {
+        let id = match[1];
+        let description = match[2] ? match[2] : "";
+        
+
+        let replace = eta.render(youtubeTpl, {
+          videoId: id,
+          description: description
+        });
+     
+        filtered = filtered.replace(match[0], replace);
+      }
+      return filtered;
+    }
+  },
   example: {
     type: "lang",
     filter: function(text, converter, options) {
       let matches = text.matchAll(/:::example (.+?)\s(.+)?/g);
       let filtered = text.substring(0);
       for (const match of matches) {
-        let id = match[1];
-        let hash = match[2] ? match[2] : "";
+        let split = match[1].split("#")
+        let id = split[0];
+        let hash = split[1] ? ("#"+split[1]) : "";
+        let description = match[2] ? match[2] : "";
         let relativeUrl = "examples/" + id + ".html" + hash;
         let viewSourceRelativeUrl = "/viewsource/examples/" + id + ".html";
         let shotUrl = encodeURIComponent(
@@ -65,6 +88,7 @@ module.exports = {
 
         let replace = eta.render(exampleTpl, {
           exampleId: id,
+          description: description,
           exampleRelativeUrl: relativeUrl,
           exampleViewSourceRelativeUrl: viewSourceRelativeUrl,
           puppeteerAddress: process.env.PUPPETEER_ADDRESS,

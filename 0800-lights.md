@@ -4,9 +4,23 @@ title: Lights
 
 
 # Lights
+Lighting is a fundamental aspect of a 3-dimensional environment. After all, without light we would not see anything. In the previous chapter, we have not worried about lighting because A-Frame provides it by default. However, if we want to create a richer environment, we will need to add and configure lights beyond the default ones.
 
+By default, if we don't explicitly add a light to our scene, A-Frame will add the following:
+```html
+<a-light type="ambient" color="#BBB"></a-light>
 
-:::example 01-basics-06-lights
+<a-light
+  type="directional"
+  color="#FFF"
+  intensity="0.6"
+  position="-0.5 1 1"
+></a-light>
+```
+
+These correspond to an ambient light with light gray color and a directional light positioned just behind the user, a bit to the left.
+
+:::example 0800-lights-01-default  Default lights in A-Frame
 
 
 There are various kinds of lights. In the example, you can see three types: ambient, point, and directional lights. 
@@ -23,6 +37,14 @@ Open the example in a new tab and then press `<ctrl> + <alt> + i`.
 After you adjusted the light, you can copy the values of the attributes back to your code.
 
 1. Use the inspector to change the point light so that it illuminates objects from the right side
+
+
+## Ambient light
+:::youtube _26KGnN1xws  Changing ambient light with A-Frame Visual Inspector
+
+
+## Directional light
+:::youtube TZInZbx8Ypg Moving directional light with A-Frame Visual Inspector
 
 
   

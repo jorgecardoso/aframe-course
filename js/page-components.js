@@ -12,7 +12,8 @@ const converter = new showdown.Converter({
     markdownExtensions.exercise,
     markdownExtensions.refexample,
     markdownExtensions.imgexample,
-    markdownExtensions.note
+    markdownExtensions.note,
+    markdownExtensions.youtube
   ]
 });
 converter.setOption("metadata", "true");

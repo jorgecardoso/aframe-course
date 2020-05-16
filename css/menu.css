@@ -48,6 +48,7 @@ ol.menu a {
   outline: 4px solid blue;
 }
 ol.menu:first-of-type li:first-of-type,
+ol.menu:first-of-type li:nth-last-child(2),
 ol.menu:first-of-type li:last-of-type {
   /*display: inline-block;*/
   background-color: #f2f2f2;

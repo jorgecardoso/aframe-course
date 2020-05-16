@@ -1,0 +1,23 @@
+<figure class="youtube">
+  <figcaption>
+    Youtube Video - <%= it.description %>.
+    <a href="https://www.youtube.com/embed/<%= it.videoId %>" target="_blank"
+      >https://www.youtube.com/embed/<%= it.videoId %></a
+    >
+  </figcaption>
+  <iframe
+    class="fullwidth"
+    width="800"
+    height="450"
+    src="https://www.youtube.com/embed/<%= it.videoId %>?cc_load_policy=1&cc_lang_pref=en"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+  <img
+    class="fullwidth"
+    width="800"
+    height="450"
+    src="https://img.youtube.com/vi/<%= it.videoId %>/0.jpg"
+  />
+</figure>
